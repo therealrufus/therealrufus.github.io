@@ -1,3 +1,11 @@
+.uvod,
+.buttons > div:hover {
+  transition: linear 80ms;
+  border-bottom: solid;
+  margin-top: 5px;
+  border-width: 3px;
+  border-color: #3f220f;
+}
 .center_text {
   display: flex;
   flex-direction: row;
