@@ -1,50 +1,152 @@
 <head>
-    <title>Jirkazmasivu</title>
-    <link
-      rel="stylesheet"
-      href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Itim&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="jzm_logo_bile_light.png" type="image/icon type" />
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
-    <link rel="stylesheet" href="index_style.css" />
-    <link rel="stylesheet" href="main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/8e70d93942.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <title>Jirkazmasivu</title>
+  <link
+    rel="stylesheet"
+    href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Itim&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" href="jzm_logo_bile_light.png" type="image/icon type" />
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <link rel="stylesheet" href="stoly_style.css" />
+  <link rel="stylesheet" href="main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script
+    src="https://kit.fontawesome.com/8e70d93942.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
 <body>
-    <div class="content">
-        <div class="navbar">
-            <img src="jzm_logo.png" alt="" />
-            <div class="buttons">
-              <div class="uvod"><a href="index4.html">Úvod</a></div>
-              <div class="stoly"><a href="stoly.html">Stoly</a></div>
-              <div class="ostatni"><a href="">Ostatní</a></div>
-              <div class="vyroba"><a href="">O Výrobě</a></div>
-              <div class="kontakt"><a href="">Kontakt</a></div>
-            </div>
-          </div>
+  <div class="content">
+    <div class="navbar">
+      <img src="jzm_logo.png" alt="" />
+      <div class="buttons">
+        <div class="uvod"><a href="index.html">Úvod</a></div>
+        <div class="stoly"><a href="stoly.html">Stoly</a></div>
+        <div class="ostatni"><a href="">Ostatní</a></div>
+        <div class="vyroba"><a href="">O Výrobě</a></div>
+        <div class="kontakt"><a href="">Kontakt</a></div>
+      </div>
     </div>
-</body>  
+    <div class="slideshow">
+      <div class="container">
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="img_woods_wide.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="img_5terre_wide.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="img_mountains_wide.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="img_lights_wide.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="img_nature_wide.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="img_snow_wide.jpg" style="width: 100%" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="img_woods.jpg"
+              style="width: 100%"
+              onclick="currentSlide(1)"
+              alt="The Woods"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="img_5terre.jpg"
+              style="width: 100%"
+              onclick="currentSlide(2)"
+              alt="Cinque Terre"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="img_mountains.jpg"
+              style="width: 100%"
+              onclick="currentSlide(3)"
+              alt="Mountains and fjords"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="img_lights.jpg"
+              style="width: 100%"
+              onclick="currentSlide(4)"
+              alt="Northern Lights"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="img_nature.jpg"
+              style="width: 100%"
+              onclick="currentSlide(5)"
+              alt="Nature and sunrise"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="img_snow.jpg"
+              style="width: 100%"
+              onclick="currentSlide(6)"
+              alt="Snowy Mountains"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
