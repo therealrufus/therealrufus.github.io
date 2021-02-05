@@ -6,7 +6,7 @@ body {
   font-family: Courgette;
   width: 100vw;
   height: auto;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 .content {
   background-image: url(pozadi_drevo_seamless.jpg);
@@ -216,11 +216,13 @@ body {
 
 .copyright{
   background-color: #331c0d;
-  text-align: right;
+  display: flex;
+  justify-content:flex-end;
+  text-align: center;
 }
 
-.copyright > h1{ 
+.copyright > h1{
   padding: 10px;
-  padding-right: 20px;
+  margin-right: 20px;
   color: rgb(146, 112, 76);
 }
