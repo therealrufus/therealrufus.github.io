@@ -1,63 +1,63 @@
 body {
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Courgette;
-    width: 100vw;
-    height: auto;
-    overflow-x:hidden;
-  }
-  .content {
-    background-image: url(pozadi_drevo_seamless.jpg);
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-  .navbar {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 80%;
-    width: auto;
-    padding-right: 30px;
-  }
-  .navbar > img {
-    width: auto;
-    height: 120px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 8px;
-  }
-  .buttons {
-    display: flex;
-    flex-direction: row;
-  }
-  .buttons > div > a {
-    color: #27150a;
-    text-align: center;
-    text-decoration: none;
-    font-size: 33px;
-    padding-bottom: 0px;
-    margin-top: -40px;
-  }
-  .buttons > div {
-    transition: linear 100ms;
-    align-self: center;
-    margin: 10px;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .uvod,
-  .buttons > div:hover {
-    transition: linear 80ms;
-    border-bottom: solid;
-    margin-top: 5px;
-    border-width: 3px;
-    border-color: #3f220f;
-  }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Courgette;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+.content {
+  background-image: url(pozadi_drevo_seamless.jpg);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.navbar {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80%;
+  width: auto;
+  padding-right: 30px;
+}
+.navbar > img {
+  width: auto;
+  height: 120px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.buttons > div > a {
+  color: #27150a;
+  text-align: center;
+  text-decoration: none;
+  font-size: 33px;
+  padding-bottom: 0px;
+  margin-top: -40px;
+}
+.buttons > div {
+  transition: linear 100ms;
+  align-self: center;
+  margin: 10px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.uvod,
+.buttons > div:hover {
+  transition: linear 80ms;
+  border-bottom: solid;
+  margin-top: 5px;
+  border-width: 3px;
+  border-color: #3f220f;
+}

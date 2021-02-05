@@ -117,7 +117,7 @@
   border: 2px solid #3f220f;
 }
 
-.kontakty{
+.kontakty {
   color: #331c0d;
   text-align: center;
   align-self: center;
@@ -129,36 +129,37 @@
   padding-top: 20px;
   margin-bottom: 50px;
 }
-.kontakth > a{
+.kontakth > a {
   font-size: 35px;
   font-weight: bold;
   text-decoration: none;
   color: #331c0d;
 }
-.kontaktwrapper{
+.kontaktwrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 25px;
 }
-.kontaktwrapper > div{
+.kontaktwrapper > div {
   padding: 25px;
 }
-.kontaktwrapper > h1, p{
+.kontaktwrapper > h1,
+p {
   padding-top: 20px;
 }
-.site > a{
+.site > a {
   color: #331c0d;
 }
 
-.copyright{
+.copyright {
   background-color: #331c0d;
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   text-align: center;
 }
 
-.copyright > h1{
+.copyright > h1 {
   padding: 10px;
   margin-right: 20px;
   color: rgb(146, 112, 76);
