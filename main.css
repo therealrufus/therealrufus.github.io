@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 80%;
+  height: 15%;
   width: auto;
   padding-right: 30px;
 }
