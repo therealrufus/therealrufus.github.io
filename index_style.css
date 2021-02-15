@@ -92,9 +92,6 @@
 #left.banner{
   justify-self: flex-start;
 }
-#right{
-  justify-self: flex-end;
-}
 .image {
   width: 40%;
   height: auto;
@@ -105,26 +102,20 @@
   object-fit:cover;
 }
 #left.image {
-  border-top: 4px solid #3f220f;
-  border-bottom: 4px solid #3f220f;
-  border-left: 4px solid #3f220f;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
+  margin-right: 45px;
+  border: 4px solid #3f220f;
+  border-radius: 25px;
 }
 #right.image {
-  border-top: 4px solid #3f220f;
-  border-bottom: 4px solid #3f220f;
-  border-right: 4px solid #3f220f;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
+  margin-left: 30px;
+  border: 4px solid #3f220f;
+  border-radius: 25px;
 }
 #right.image > img{
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
 }
 #left.image > img{
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
+  border-radius: 20px;
 }
 .text {
   color: #331c0d;
