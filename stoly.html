@@ -49,142 +49,119 @@
         <div class="kontakt"><a href="">Kontakt</a></div>
       </div>
     </div>
-    <div class="slideshow">
+    <div class="containerwrapper">
       <div class="container">
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
-          <div class="numbertext">1 / 6</div>
-          <img src="/galerie/stul_buk/buk1.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">2 / 6</div>
-          <img src="/galerie/stul_buk/buk2.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">3 / 6</div>
-          <img src="/galerie/stul_buk/buk3.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-          <img src="/galerie/stul_buk/buk4.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">5 / 6</div>
-          <img src="/galerie/stul_buk/buk5.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">6 / 6</div>
-          <img src="/galerie/stul_buk/buk6.jpg" style="width: 100%" />
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- Image text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
-        <!-- Thumbnail images -->
-        <div class="row">
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/galerie/stul_buk/buk1.jpg"
-              style="width: 100%"
-              onclick="currentSlide(1)"
-              alt="stůl buk"
-            />
+        <div class="gallery1" id="gallery">
+          <div class="items1" id="items">
+            <div class="item1 active">
+              <img src="/galerie/stul_buk/buk1.jpg" alt="" />
+            </div>
+            <div class="item1">
+              <img src="/galerie/stul_buk/buk2.jpg" alt="" />
+            </div>
+            <div class="item1">
+              <img src="/galerie/stul_buk/buk3.jpg" alt="" />
+            </div>
+            <div class="item1">
+              <img src="/galerie/stul_buk/buk4.jpg" alt="" />
+            </div>
+            <div class="item1">
+              <img src="/galerie/stul_buk/buk5.jpg" alt="" />
+            </div>
+            <div class="item1">
+              <img src="/galerie/stul_buk/buk6.jpg" alt="" />
+            </div>
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/galerie/stul_buk/buk2.jpg"
-              style="width: 100%"
-              onclick="currentSlide(2)"
-              alt="stůl buk"
-            />
+          <div class="prev1" id="prev">
+            <p>&#10094;</p>
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/galerie/stul_buk/buk3.jpg"
-              style="width: 100%"
-              onclick="currentSlide(3)"
-              alt="stůl buk"
-            />
+          <div class="next1" id="next">
+            <p>&#10095;</p>
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/galerie/stul_buk/buk4.jpg"
-              style="width: 100%"
-              onclick="currentSlide(4)"
-              alt="stůl buk"
-            />
+          <div class="info1" id="info">
+            <p>Sestava dvou bukových stolů k venkovnímu sezení.</p>
+            <p>
+              rozměry: d 4m, š 81-87cm, v 77cm, tl 7cm,
+              kovové podnoží.
+            </p>
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/galerie/stul_buk/buk5.jpg"
-              style="width: 100%"
-              onclick="currentSlide(5)"
-              alt="stůl buk"
-            />
+        </div>
+
+        <div class="gallery2" id="gallery">
+          <div class="items2" id="items">
+            <div class="item2 active">
+              <img src="/galerie/stul_buk/buk1.jpg" alt="" />
+            </div>
+            <div class="item2">
+              <img src="/galerie/stul_buk/buk2.jpg" alt="" />
+            </div>
+            <div class="item2">
+              <img src="/galerie/stul_buk/buk3.jpg" alt="" />
+            </div>
+            <div class="item2">
+              <img src="/galerie/stul_buk/buk4.jpg" alt="" />
+            </div>
+            <div class="item2">
+              <img src="/galerie/stul_buk/buk5.jpg" alt="" />
+            </div>
+            <div class="item2">
+              <img src="/galerie/stul_buk/buk6.jpg" alt="" />
+            </div>
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/galerie/stul_buk/buk1.jpg"
-              style="width: 100%"
-              onclick="currentSlide(6)"
-              alt="stůl buk"
-            />
+          <div class="prev2" id="prev">
+            <p>&#10094;</p>
           </div>
+          <div class="next2" id="next">
+            <p>&#10095;</p>
+          </div>
+          <div class="info2" id="info"><p>stul buk</p></div>
         </div>
       </div>
-    </div>    
+    </div>
   </div>
 </body>
 <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
+  let slides1 = document.querySelector(".items1").children;
+  let prevSlide1 = document.querySelector(".prev1");
+  let nextSlide1 = document.querySelector(".next1");
 
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides((slideIndex += n));
-  }
+  let slides2 = document.querySelector(".items2").children;
+  let prevSlide2 = document.querySelector(".prev2");
+  let nextSlide2 = document.querySelector(".next2");
 
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides((slideIndex = n));
-  }
+  let index = 0;
 
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {
-      slideIndex = 1;
+  nextSlide1.onclick = function () {
+    next("next", slides1);
+  };
+  prevSlide1.onclick = function () {
+    next("prev", slides1);
+  };
+
+  nextSlide2.onclick = function () {
+    next("next", slides2);
+  };
+  prevSlide2.onclick = function () {
+    next("prev", slides2);
+  };
+
+  function next(direction, slides_send) {
+    if (direction == "next") {
+      index++;
+      if (index == slides_send.length) {
+        index = 0;
+      }
+    } else {
+      if (index == 0) {
+        index = slides_send.length - 1;
+      } else {
+        index--;
+      }
     }
-    if (n < 1) {
-      slideIndex = slides.length;
+
+    for (i = 0; i < slides_send.length; i++) {
+      slides_send[i].classList.remove("active");
     }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex - 1].alt;
+    slides_send[index].classList.add("active");
   }
 </script>

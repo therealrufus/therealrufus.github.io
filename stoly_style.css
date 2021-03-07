@@ -7,37 +7,51 @@
   border-color: #3f220f;
 }
 
-.slideshow {
+.containerwrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
-
-/* Position the image container (needed to position the left and right arrows) */
 .container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
-  border: 4px solid #3f220f;
 }
-
-/* Hide the images by default */
-.mySlides {
+#gallery {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+}
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3f220f;
+  color: #92704c;
+  padding: 15px;
+  font-size: 25px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.item1,
+.item2 {
   display: none;
 }
-.mySlides > img{  
-  height: 100%;
+.item1.active,
+.item2.active {
+  display: block;
+  margin-bottom: -2px;
 }
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
+#prev,
+#next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -45,22 +59,26 @@
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
-/* Position the "next button" to the right */
-.next {
+#prev > p,
+#next > p {
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+#next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+#prev:hover,
+#next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -68,34 +86,4 @@
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 8px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
 }
