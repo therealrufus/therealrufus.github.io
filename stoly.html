@@ -53,22 +53,22 @@
       <div class="container">
         <div class="gallery1" id="gallery">
           <div class="items1" id="items">
-            <div class="item1 active">
+            <div class="item1 active" id="item">
               <img src="/galerie/stul_buk/buk1.jpg" alt="" />
             </div>
-            <div class="item1">
+            <div class="item1" id="item">
               <img src="/galerie/stul_buk/buk2.jpg" alt="" />
             </div>
-            <div class="item1">
+            <div class="item1" id="item">
               <img src="/galerie/stul_buk/buk3.jpg" alt="" />
             </div>
-            <div class="item1">
+            <div class="item1" id="item">
               <img src="/galerie/stul_buk/buk4.jpg" alt="" />
             </div>
-            <div class="item1">
+            <div class="item1" id="item">
               <img src="/galerie/stul_buk/buk5.jpg" alt="" />
             </div>
-            <div class="item1">
+            <div class="item1" id="item">
               <img src="/galerie/stul_buk/buk6.jpg" alt="" />
             </div>
           </div>
@@ -80,41 +80,28 @@
           </div>
           <div class="info1" id="info">
             <p>Sestava dvou bukových stolů k venkovnímu sezení.</p>
-            <p>
-              rozměry: d 4m, š 81-87cm, v 77cm, tl 7cm,
-              kovové podnoží.
-            </p>
+            <p>rozměry: d 4m, š 81-87cm, v 77cm, tl 7cm, kovové podnoží.</p>
           </div>
-        </div>
-
-        <div class="gallery2" id="gallery">
-          <div class="items2" id="items">
-            <div class="item2 active">
+          <div class="imgRow1" id="imgRow">
+            <div class="rowItem1 active" id="rowItem">
               <img src="/galerie/stul_buk/buk1.jpg" alt="" />
             </div>
-            <div class="item2">
+            <div class="rowItem1" id="rowItem">
               <img src="/galerie/stul_buk/buk2.jpg" alt="" />
             </div>
-            <div class="item2">
+            <div class="rowItem1" id="rowItem">
               <img src="/galerie/stul_buk/buk3.jpg" alt="" />
             </div>
-            <div class="item2">
+            <div class="rowItem1" id="rowItem">
               <img src="/galerie/stul_buk/buk4.jpg" alt="" />
             </div>
-            <div class="item2">
+            <div class="rowItem1" id="rowItem">
               <img src="/galerie/stul_buk/buk5.jpg" alt="" />
             </div>
-            <div class="item2">
+            <div class="rowItem1" id="rowItem">
               <img src="/galerie/stul_buk/buk6.jpg" alt="" />
             </div>
           </div>
-          <div class="prev2" id="prev">
-            <p>&#10094;</p>
-          </div>
-          <div class="next2" id="next">
-            <p>&#10095;</p>
-          </div>
-          <div class="info2" id="info"><p>stul buk</p></div>
         </div>
       </div>
     </div>
@@ -122,46 +109,57 @@
 </body>
 <script>
   let slides1 = document.querySelector(".items1").children;
+  let rows1 = document.querySelector(".imgRow1").children;
   let prevSlide1 = document.querySelector(".prev1");
   let nextSlide1 = document.querySelector(".next1");
 
-  let slides2 = document.querySelector(".items2").children;
-  let prevSlide2 = document.querySelector(".prev2");
-  let nextSlide2 = document.querySelector(".next2");
-
   let index = 0;
 
+  for (i = 0, len = rows1.length; i < len; i++) {
+    rows1[i].addEventListener("click", function (event) {    
+      select(event.target.parentElement, slides1, rows1);
+    });
+  }
+
   nextSlide1.onclick = function () {
-    next("next", slides1);
+    next("next", slides1, rows1);
   };
   prevSlide1.onclick = function () {
-    next("prev", slides1);
+    next("prev", slides1, rows1);
   };
 
-  nextSlide2.onclick = function () {
-    next("next", slides2);
-  };
-  prevSlide2.onclick = function () {
-    next("prev", slides2);
-  };
-
-  function next(direction, slides_send) {
+  function next(direction, slides, rows) {
     if (direction == "next") {
       index++;
-      if (index == slides_send.length) {
+      if (index == slides.length) {
         index = 0;
       }
     } else {
       if (index == 0) {
-        index = slides_send.length - 1;
+        index = slides.length - 1;
       } else {
         index--;
       }
     }
 
-    for (i = 0; i < slides_send.length; i++) {
-      slides_send[i].classList.remove("active");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+      rows[i].classList.remove("active");
     }
-    slides_send[index].classList.add("active");
+    slides[index].classList.add("active");
+    rows[index].classList.add("active");
+  }
+
+  function select(item, slides, rows) {
+    let childs = [];
+    for (i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+      rows[i].classList.remove("active");
+    }
+    for (j = 0; j < rows.length; j++) {
+      childs.push(rows[j].innerHTML);
+    }
+    slides[childs.indexOf(item.innerHTML)].classList.add("active");
+    item.classList.add("active");
   }
 </script>
