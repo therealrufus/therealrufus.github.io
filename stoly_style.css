@@ -39,13 +39,6 @@ img {
   width: 100%;
   height: auto;
 }
-.item1 {
-  display: none;
-}
-.item1.active {
-  display: block;
-  margin-bottom: -2px;
-}
 #prev,
 #next {
   cursor: pointer;
@@ -78,17 +71,36 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
-#imgRow{
+#imgRow {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
   cursor: pointer;
 }
-.rowItem1.active{
+.item1,
+.item2,
+.item3,
+.item4 {
+  display: none;
+}
+.item1.active,
+.item2.active,
+.item3.active,
+.item4.active {
+  display: block;
+  margin-bottom: -2px;
+}
+.rowItem1.active,
+.rowItem2.active,
+.rowItem3.active,
+.rowItem4.active {
   opacity: 100%;
- }
+}
 
-.rowItem1{
+.rowItem1,
+.rowItem2,
+.rowItem3,
+.rowItem4 {
   opacity: 50%;
 }
