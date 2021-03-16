@@ -198,8 +198,7 @@
   </div>
 </body>
 <script>
-  let index = 0;
-
+  let index1 = 0;
   let slides1 = document.querySelector(".items1").children;
   let rows1 = document.querySelector(".imgRow1").children;
   let prevSlide1 = document.querySelector(".prev1");
@@ -207,19 +206,19 @@
 
   for (i = 0, len = rows1.length; i < len; i++) {
     rows1[i].addEventListener("click", function (event) {
-      select(event.target.parentElement, slides1, rows1);
+      index1 = select(event.target.parentElement, slides1, rows1);
     });
   }
 
   nextSlide1.onclick = function () {
-    next("next", slides1, rows1);
+    index1 = next("next", slides1, rows1, index1);
   };
   prevSlide1.onclick = function () {
-    next("prev", slides1, rows1);
+    index1 = next("prev", slides1, rows1, index1);
   };
 
   //2
-
+  let index2 = 0;
   let slides2 = document.querySelector(".items2").children;
   let rows2 = document.querySelector(".imgRow2").children;
   let prevSlide2 = document.querySelector(".prev2");
@@ -227,19 +226,19 @@
 
   for (i = 0, len = rows2.length; i < len; i++) {
     rows2[i].addEventListener("click", function (event) {
-      select(event.target.parentElement, slides2, rows2);
+      index2 = select(event.target.parentElement, slides2, rows2);
     });
   }
 
   nextSlide2.onclick = function () {
-    next("next", slides2, rows2);
+    index2 = next("next", slides2, rows2, index2);
   };
   prevSlide2.onclick = function () {
-    next("prev", slides2, rows2);
+    index2 = next("prev", slides2, rows2, index2);
   };
 
   //3
-
+  let index3 = 0; 
   let slides3 = document.querySelector(".items3").children;
   let rows3 = document.querySelector(".imgRow3").children;
   let prevSlide3 = document.querySelector(".prev3");
@@ -247,20 +246,20 @@
 
   for (i = 0, len = rows3.length; i < len; i++) {
     rows3[i].addEventListener("click", function (event) {
-      select(event.target.parentElement, slides3, rows3);
+      index3 = select(event.target.parentElement, slides3, rows3);
     });
   }
 
   nextSlide3.onclick = function () {
-    next("next", slides3, rows3);
+    index3 = next("next", slides3, rows3, index3);
   };
   prevSlide3.onclick = function () {
-    next("prev", slides3, rows3);
+    index3 = next("prev", slides3, rows3, index3);
   };
 
   //func
 
-  function next(direction, slides, rows) {
+  function next(direction, slides, rows,index) {
     if (direction == "next") {
       index++;
       if (index == slides.length) {
@@ -273,16 +272,16 @@
         index--;
       }
     }
-
     for (i = 0; i < slides.length; i++) {
       slides[i].classList.remove("active");
       rows[i].classList.remove("active");
     }
     slides[index].classList.add("active");
     rows[index].classList.add("active");
+    return index;    
   }
 
-  function select(item, slides, rows) {
+  function select(item, slides, rows, index) {
     let childs = [];
     for (i = 0; i < slides.length; i++) {
       slides[i].classList.remove("active");
@@ -293,5 +292,6 @@
     }
     slides[childs.indexOf(item.innerHTML)].classList.add("active");
     item.classList.add("active");
+    return childs.indexOf(item.innerHTML);
   }
 </script>
