@@ -81,26 +81,42 @@ img {
 .item1,
 .item2,
 .item3,
-.item4 {
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
   display: none;
 }
 .item1.active,
 .item2.active,
 .item3.active,
-.item4.active {
+.item4.active,
+.item5.active,
+.item6.active,
+.item7.active,
+.item8.active {
   display: block;
   margin-bottom: -2px;
 }
 .rowItem1.active,
 .rowItem2.active,
 .rowItem3.active,
-.rowItem4.active {
+.rowItem4.active,
+.rowItem5.active,
+.rowItem6.active,
+.rowItem7.active,
+.rowItem8.active {
   opacity: 100%;
 }
 
 .rowItem1,
 .rowItem2,
 .rowItem3,
-.rowItem4 {
+.rowItem4,
+.rowItem5,
+.rowItem6,
+.rowItem7,
+.rowItem8 {
   opacity: 50%;
 }
