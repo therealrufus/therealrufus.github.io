@@ -31,6 +31,11 @@
         <div class="kontakt"><a href="">Kontakt</a></div>
       </div>
     </div>
+    <div class="heading">
+      <h1>
+        Galerie stolů
+      </h1>
+    </div>
     <div class="containerwrapper">
       <div class="container">
         <div class="gallery1" id="gallery">
@@ -434,203 +439,206 @@
         </div>
       </div>
     </div>
+    <div class="copyright">
+      <h1>©2021 Filip Brož</h1>
+    </div>
   </div>
-</body>
-<script>
-  let index1 = 0;
-  let slides1 = document.querySelector(".items1").children;
-  let rows1 = document.querySelector(".imgRow1").children;
-  let prevSlide1 = document.querySelector(".prev1");
-  let nextSlide1 = document.querySelector(".next1");
-
-  for (i = 0, len = rows1.length; i < len; i++) {
-    rows1[i].addEventListener("click", function (event) {
-      index1 = select(event.target.parentElement, slides1, rows1);
-    });
-  }
-
-  nextSlide1.onclick = function () {
-    index1 = next("next", slides1, rows1, index1);
-  };
-  prevSlide1.onclick = function () {
-    index1 = next("prev", slides1, rows1, index1);
-  };
-
-  //2
-  let index2 = 0;
-  let slides2 = document.querySelector(".items2").children;
-  let rows2 = document.querySelector(".imgRow2").children;
-  let prevSlide2 = document.querySelector(".prev2");
-  let nextSlide2 = document.querySelector(".next2");
-
-  for (i = 0, len = rows2.length; i < len; i++) {
-    rows2[i].addEventListener("click", function (event) {
-      index2 = select(event.target.parentElement, slides2, rows2);
-    });
-  }
-
-  nextSlide2.onclick = function () {
-    index2 = next("next", slides2, rows2, index2);
-  };
-  prevSlide2.onclick = function () {
-    index2 = next("prev", slides2, rows2, index2);
-  };
-
-  //3
-  let index3 = 0;
-  let slides3 = document.querySelector(".items3").children;
-  let rows3 = document.querySelector(".imgRow3").children;
-  let prevSlide3 = document.querySelector(".prev3");
-  let nextSlide3 = document.querySelector(".next3");
-
-  for (i = 0, len = rows3.length; i < len; i++) {
-    rows3[i].addEventListener("click", function (event) {
-      index3 = select(event.target.parentElement, slides3, rows3);
-    });
-  }
-
-  nextSlide3.onclick = function () {
-    index3 = next("next", slides3, rows3, index3);
-  };
-  prevSlide3.onclick = function () {
-    index3 = next("prev", slides3, rows3, index3);
-  };
-
-  //4
-  let index4 = 0;
-  let slides4 = document.querySelector(".items4").children;
-  let rows4 = document.querySelector(".imgRow4").children;
-  let prevSlide4 = document.querySelector(".prev4");
-  let nextSlide4 = document.querySelector(".next4");
-
-  for (i = 0, len = rows4.length; i < len; i++) {
-    rows4[i].addEventListener("click", function (event) {
-      index4 = select(event.target.parentElement, slides4, rows4);
-    });
-  }
-
-  nextSlide4.onclick = function () {
-    index4 = next("next", slides4, rows4, index4);
-  };
-  prevSlide4.onclick = function () {
-    index4 = next("prev", slides4, rows4, index4);
-  };
-
-  //5
-  let index5 = 0;
-  let slides5 = document.querySelector(".items5").children;
-  let rows5 = document.querySelector(".imgRow5").children;
-  let prevSlide5 = document.querySelector(".prev5");
-  let nextSlide5 = document.querySelector(".next5");
-
-  for (i = 0, len = rows5.length; i < len; i++) {
-    rows5[i].addEventListener("click", function (event) {
-      index5 = select(event.target.parentElement, slides5, rows5);
-    });
-  }
-
-  nextSlide5.onclick = function () {
-    index5 = next("next", slides5, rows5, index5);
-  };
-  prevSlide5.onclick = function () {
-    index5 = next("prev", slides5, rows5, index5);
-  };
-
-  //6
-  let index6 = 0;
-  let slides6 = document.querySelector(".items6").children;
-  let rows6 = document.querySelector(".imgRow6").children;
-  let prevSlide6 = document.querySelector(".prev6");
-  let nextSlide6 = document.querySelector(".next6");
-
-  for (i = 0, len = rows6.length; i < len; i++) {
-    rows6[i].addEventListener("click", function (event) {
-      index6 = select(event.target.parentElement, slides6, rows6);
-    });
-  }
-
-  nextSlide6.onclick = function () {
-    index6 = next("next", slides6, rows6, index6);
-  };
-  prevSlide6.onclick = function () {
-    index6 = next("prev", slides6, rows6, index6);
-  };
-
-  //7
-  let index7 = 0;
-  let slides7 = document.querySelector(".items7").children;
-  let rows7 = document.querySelector(".imgRow7").children;
-  let prevSlide7 = document.querySelector(".prev7");
-  let nextSlide7 = document.querySelector(".next7");
-
-  for (i = 0, len = rows7.length; i < len; i++) {
-    rows7[i].addEventListener("click", function (event) {
-      index7 = select(event.target.parentElement, slides7, rows7);
-    });
-  }
-
-  nextSlide7.onclick = function () {
-    index7 = next("next", slides7, rows7, index7);
-  };
-  prevSlide7.onclick = function () {
-    index7 = next("prev", slides7, rows7, index7);
-  };
-
-  //8
-  let index8 = 0;
-  let slides8 = document.querySelector(".items8").children;
-  let rows8 = document.querySelector(".imgRow8").children;
-  let prevSlide8 = document.querySelector(".prev8");
-  let nextSlide8 = document.querySelector(".next8");
-
-  for (i = 0, len = rows8.length; i < len; i++) {
-    rows8[i].addEventListener("click", function (event) {
-      index8 = select(event.target.parentElement, slides8, rows8);
-    });
-  }
-
-  nextSlide8.onclick = function () {
-    index8 = next("next", slides8, rows8, index8);
-  };
-  prevSlide8.onclick = function () {
-    index8 = next("prev", slides8, rows8, index8);
-  };
-
-  //func
-
-  function next(direction, slides, rows, index) {
-    if (direction == "next") {
-      index++;
-      if (index == slides.length) {
-        index = 0;
-      }
-    } else {
-      if (index == 0) {
-        index = slides.length - 1;
+  <script>
+    let index1 = 0;
+    let slides1 = document.querySelector(".items1").children;
+    let rows1 = document.querySelector(".imgRow1").children;
+    let prevSlide1 = document.querySelector(".prev1");
+    let nextSlide1 = document.querySelector(".next1");
+  
+    for (i = 0, len = rows1.length; i < len; i++) {
+      rows1[i].addEventListener("click", function (event) {
+        index1 = select(event.target.parentElement, slides1, rows1);
+      });
+    }
+  
+    nextSlide1.onclick = function () {
+      index1 = next("next", slides1, rows1, index1);
+    };
+    prevSlide1.onclick = function () {
+      index1 = next("prev", slides1, rows1, index1);
+    };
+  
+    //2
+    let index2 = 0;
+    let slides2 = document.querySelector(".items2").children;
+    let rows2 = document.querySelector(".imgRow2").children;
+    let prevSlide2 = document.querySelector(".prev2");
+    let nextSlide2 = document.querySelector(".next2");
+  
+    for (i = 0, len = rows2.length; i < len; i++) {
+      rows2[i].addEventListener("click", function (event) {
+        index2 = select(event.target.parentElement, slides2, rows2);
+      });
+    }
+  
+    nextSlide2.onclick = function () {
+      index2 = next("next", slides2, rows2, index2);
+    };
+    prevSlide2.onclick = function () {
+      index2 = next("prev", slides2, rows2, index2);
+    };
+  
+    //3
+    let index3 = 0;
+    let slides3 = document.querySelector(".items3").children;
+    let rows3 = document.querySelector(".imgRow3").children;
+    let prevSlide3 = document.querySelector(".prev3");
+    let nextSlide3 = document.querySelector(".next3");
+  
+    for (i = 0, len = rows3.length; i < len; i++) {
+      rows3[i].addEventListener("click", function (event) {
+        index3 = select(event.target.parentElement, slides3, rows3);
+      });
+    }
+  
+    nextSlide3.onclick = function () {
+      index3 = next("next", slides3, rows3, index3);
+    };
+    prevSlide3.onclick = function () {
+      index3 = next("prev", slides3, rows3, index3);
+    };
+  
+    //4
+    let index4 = 0;
+    let slides4 = document.querySelector(".items4").children;
+    let rows4 = document.querySelector(".imgRow4").children;
+    let prevSlide4 = document.querySelector(".prev4");
+    let nextSlide4 = document.querySelector(".next4");
+  
+    for (i = 0, len = rows4.length; i < len; i++) {
+      rows4[i].addEventListener("click", function (event) {
+        index4 = select(event.target.parentElement, slides4, rows4);
+      });
+    }
+  
+    nextSlide4.onclick = function () {
+      index4 = next("next", slides4, rows4, index4);
+    };
+    prevSlide4.onclick = function () {
+      index4 = next("prev", slides4, rows4, index4);
+    };
+  
+    //5
+    let index5 = 0;
+    let slides5 = document.querySelector(".items5").children;
+    let rows5 = document.querySelector(".imgRow5").children;
+    let prevSlide5 = document.querySelector(".prev5");
+    let nextSlide5 = document.querySelector(".next5");
+  
+    for (i = 0, len = rows5.length; i < len; i++) {
+      rows5[i].addEventListener("click", function (event) {
+        index5 = select(event.target.parentElement, slides5, rows5);
+      });
+    }
+  
+    nextSlide5.onclick = function () {
+      index5 = next("next", slides5, rows5, index5);
+    };
+    prevSlide5.onclick = function () {
+      index5 = next("prev", slides5, rows5, index5);
+    };
+  
+    //6
+    let index6 = 0;
+    let slides6 = document.querySelector(".items6").children;
+    let rows6 = document.querySelector(".imgRow6").children;
+    let prevSlide6 = document.querySelector(".prev6");
+    let nextSlide6 = document.querySelector(".next6");
+  
+    for (i = 0, len = rows6.length; i < len; i++) {
+      rows6[i].addEventListener("click", function (event) {
+        index6 = select(event.target.parentElement, slides6, rows6);
+      });
+    }
+  
+    nextSlide6.onclick = function () {
+      index6 = next("next", slides6, rows6, index6);
+    };
+    prevSlide6.onclick = function () {
+      index6 = next("prev", slides6, rows6, index6);
+    };
+  
+    //7
+    let index7 = 0;
+    let slides7 = document.querySelector(".items7").children;
+    let rows7 = document.querySelector(".imgRow7").children;
+    let prevSlide7 = document.querySelector(".prev7");
+    let nextSlide7 = document.querySelector(".next7");
+  
+    for (i = 0, len = rows7.length; i < len; i++) {
+      rows7[i].addEventListener("click", function (event) {
+        index7 = select(event.target.parentElement, slides7, rows7);
+      });
+    }
+  
+    nextSlide7.onclick = function () {
+      index7 = next("next", slides7, rows7, index7);
+    };
+    prevSlide7.onclick = function () {
+      index7 = next("prev", slides7, rows7, index7);
+    };
+  
+    //8
+    let index8 = 0;
+    let slides8 = document.querySelector(".items8").children;
+    let rows8 = document.querySelector(".imgRow8").children;
+    let prevSlide8 = document.querySelector(".prev8");
+    let nextSlide8 = document.querySelector(".next8");
+  
+    for (i = 0, len = rows8.length; i < len; i++) {
+      rows8[i].addEventListener("click", function (event) {
+        index8 = select(event.target.parentElement, slides8, rows8);
+      });
+    }
+  
+    nextSlide8.onclick = function () {
+      index8 = next("next", slides8, rows8, index8);
+    };
+    prevSlide8.onclick = function () {
+      index8 = next("prev", slides8, rows8, index8);
+    };
+  
+    //func
+  
+    function next(direction, slides, rows, index) {
+      if (direction == "next") {
+        index++;
+        if (index == slides.length) {
+          index = 0;
+        }
       } else {
-        index--;
+        if (index == 0) {
+          index = slides.length - 1;
+        } else {
+          index--;
+        }
       }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        rows[i].classList.remove("active");
+      }
+      slides[index].classList.add("active");
+      rows[index].classList.add("active");
+      return index;
     }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-      rows[i].classList.remove("active");
+  
+    function select(item, slides, rows, index) {
+      let childs = [];
+      for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        rows[i].classList.remove("active");
+      }
+      for (j = 0; j < rows.length; j++) {
+        childs.push(rows[j].innerHTML);
+      }
+      slides[childs.indexOf(item.innerHTML)].classList.add("active");
+      item.classList.add("active");
+      return childs.indexOf(item.innerHTML);
     }
-    slides[index].classList.add("active");
-    rows[index].classList.add("active");
-    return index;
-  }
-
-  function select(item, slides, rows, index) {
-    let childs = [];
-    for (i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-      rows[i].classList.remove("active");
-    }
-    for (j = 0; j < rows.length; j++) {
-      childs.push(rows[j].innerHTML);
-    }
-    slides[childs.indexOf(item.innerHTML)].classList.add("active");
-    item.classList.add("active");
-    return childs.indexOf(item.innerHTML);
-  }
-</script>
+  </script>
+</body>

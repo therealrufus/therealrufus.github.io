@@ -140,7 +140,15 @@
   border-radius: 5px;
   border: 2px solid #3f220f;
 }
-
+.text > a:hover {
+  text-decoration: none;
+  color: rgba(173, 134, 92);
+  font-size: 25px;
+  padding: 10px;
+  background-color: #331c0d;
+  border-radius: 5px;
+  border: 2px solid rgba(173, 134, 92);
+}
 .kontakty {
   color: #331c0d;
   text-align: center;
@@ -176,15 +184,3 @@ p {
   color: #331c0d;
 }
 
-.copyright {
-  background-color: #331c0d;
-  display: flex;
-  justify-content: flex-end;
-  text-align: center;
-}
-
-.copyright > h1 {
-  padding: 10px;
-  margin-right: 20px;
-  color: rgb(146, 112, 76);
-}
