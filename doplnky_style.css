@@ -1,0 +1,21 @@
+.doplnky,
+.buttons > div:hover {
+  transition: linear 80ms;
+  border-bottom: solid;
+  margin-top: 5px;
+  border-width: 3px;
+  border-color: #3f220f;
+}
+.heading{
+    display: flex;
+    justify-content:  center;
+  }
+  .heading > h1{
+    color: #3f220f;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    background-color: rgba(173, 134, 92, 0.8);
+    padding: 15px;
+  }
+  

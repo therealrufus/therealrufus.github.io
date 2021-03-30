@@ -8,7 +8,7 @@
 }
 .main{
   height: 100vh;
-  margin-bottom: 100px;
+  width: 100vw;
 }
 .center_text {
   display: flex;
@@ -33,8 +33,8 @@
   padding-top: 25px;
 }
 .galleryinfo {
+  width: 100%;
   margin-top: 150px;
-  margin-bottom: 150px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;

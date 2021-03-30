@@ -4,6 +4,7 @@ body {
   justify-content: center;
   font-family: Courgette;
   width: 100vw;
+  height: 100vh;
   height: auto;
   overflow-x: hidden;
 }
