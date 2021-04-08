@@ -98,7 +98,8 @@
   .item10,
   .item11,
   .item12,
-  .item13 {
+  .item13,
+  .item14 {
     display: none;
   }
   .item1.active,
@@ -113,7 +114,8 @@
   .item10.active,
   .item11.active,
   .item12.active,
-  .item13.active {
+  .item13.active, 
+  .item14.active {
     display: block;
     margin-bottom: -2px;
   }
@@ -129,7 +131,8 @@
   .rowItem10.active,
   .rowItem11.active,
   .rowItem12.active,
-  .rowItem13.active {
+  .rowItem13.active,
+  .rowItem14.active {
     opacity: 100%;
   }
   
@@ -145,7 +148,8 @@
   .rowItem10,
   .rowItem11,
   .rowItem12,
-  .rowItem13 {
+  .rowItem13,
+  .rowItem14 {
     opacity: 50%;
   }
   
