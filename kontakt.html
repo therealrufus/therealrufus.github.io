@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Jirkazmasivu</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       rel="stylesheet"
       href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css"
@@ -28,46 +29,62 @@
     />
     <link rel="icon" href="jzm_logo_bile_light.png" type="image/icon type" />
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
-    <link rel="stylesheet" href="kontakt_style.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="kontakt_style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/8e70d93942.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      .content {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
     <div class="content">
-      <div class="navbar">
-        <img src="jzm_logo.png" alt="" />
-        <div class="buttons">
-          <div class="uvod"><a href="index.html">Úvod</a></div>
-          <div class="stoly"><a href="stoly.html">Stoly</a></div>
-          <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
-          <div class="vyroba"><a href="">O Výrobě</a></div>
-          <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
+      <div class="content">
+        <div class="navbar">
+          <img src="jzm_logo.png" alt="" />
+          <div class="buttons">
+            <div class="uvod"><a href="index.html">Úvod</a></div>
+            <div class="stoly"><a href="stoly.html">Stoly</a></div>
+            <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
+            <div class="vyroba"><a href="">O Výrobě</a></div>
+            <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
+          </div>
         </div>
-      </div>
-      <div class="heading">
-        <h1>Kontakt</h1>
-      </div>
-      <div class="container">
-        <div class="map">
-          <iframe
-            width="425"
-            height="350"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=14.109363555908205%2C49.760476533455666%2C14.222660064697267%2C49.80935461748769&amp;layer=mapnik"
-            style="border: 1px solid black"
-          ></iframe
-          ><br /><small
-            ><a href="https://www.openstreetmap.org/#map=14/49.7849/14.1660"
-              >Zobrazit větší mapu</a
-            ></small
-          >
+        <div class="heading">
+          <h1>Kontakt</h1>
+        </div>
+        <div class="container">
+          <div class="infowrapper">
+            <div class="info">
+              <div class="jmeno">
+                <h1>Jiří Hejna</h1>
+              </div>
+              <p>+420 775 900 702</p>
+              <div class="site">
+                <a
+                  href="https://www.facebook.com/Jirka-z-masivu-112788980174127"
+                  ><i class="fab fa-facebook-square"></i> Facebook</a
+                >
+                <p><i class="fas fa-envelope"></i> jirkazmasivu@seznam.cz</p>
+              </div>
+            </div>
+            <div class="map">
+              <iframe
+                style="border: none"
+                src="https://frame.mapy.cz/s/kohakulepe"
+                width="700"
+                height="466"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>

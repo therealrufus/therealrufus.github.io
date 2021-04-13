@@ -7,10 +7,10 @@ body {
   height: 100vh;
   height: auto;
   overflow-x: hidden;
-}
-.content {
   background-image: url(pozadi_drevo_seamless.jpg);
   background-size: contain;
+}
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,3 +65,4 @@ body {
   margin-right: 20px;
   color: rgb(146, 112, 76);
 }
+
