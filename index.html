@@ -46,9 +46,21 @@
           <div class="uvod"><a href="index.html">Úvod</a></div>
           <div class="stoly"><a href="stoly.html">Stoly</a></div>
           <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
-          <div class="vyroba"><a href="">O Výrobě</a></div>
+          <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
           <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
         </div>
+  <div id="myLinks">
+    <div class="linksContainer">
+      <div class="uvod"><a href="index.html">Úvod</a></div>
+      <div class="stoly"><a href="stoly.html">Stoly</a></div>
+      <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
+      <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
+      <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
       </div>      
     <div class="center_text">
       <p class="info">Pro útulné bydlení-</p>
@@ -58,7 +70,8 @@
       <div class="imgleft">
         <img src="/index_imgs/umyvadlo.jpg" alt="" />
       </div>
-      <div class="infotext">
+      <div class="infotextwrapper">
+         <div class="infotext">
         <p>
           Rodinná firma zabývající se výrobou stolů, konferenčních stolků,
           kuchyňských a barových desek, stolků pod umyvadlo a jiných doplňků z
@@ -74,9 +87,10 @@
           Podtrhněte svůj interiér jedinečnou dominantou.
         </p>
       </div>
+      </div>     
     </div>
     </div>
-      <div class="banner" style="margin-top:100px">
+      <div class="banner" style="margin-top:150px">
         <div class="text">
           <h1>Stoly</h1>
           <p>
@@ -146,4 +160,14 @@
     </div>
   </div>
   </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>

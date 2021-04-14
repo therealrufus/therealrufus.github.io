@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.vyroba,
+.buttons > div:hover {
+  transition: linear 80ms;
+  border-bottom: solid;
+  margin-top: 5px;
+  border-width: 3px;
+  border-color: #3f220f;
+}
+.displaywrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.display{
+    width: 60%;
+    height: auto;    
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.row{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+}
+.coulmn{
+    width: 33.33%;
+    height: 100%;
+    background-color: rgba(173, 134, 92, 0.8);
+}
