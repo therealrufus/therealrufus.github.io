@@ -35,17 +35,33 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="content">
-      <div class="navbar">
-        <img src="jzm_logo.png" alt="" />
-        <div class="buttons">
-          <div class="uvod"><a href="index.html">Úvod</a></div>
-          <div class="stoly"><a href="stoly.html">Stoly</a></div>
-          <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
-          <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
-          <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
-        </div>
+    <div class="mobilenavbar" id="nav" style="display: none">
+      <div class="mobnavwrapper">
+        <div class="uvod"><a href="index.html">Úvod</a></div>
+        <div class="stoly"><a href="stoly.html">Stoly</a></div>
+        <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
+        <div class="vyroba" id="mobilesecect"><a href="vyroba.html">O Výrobě</a></div>
+        <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
       </div>
+    </div>
+    <div class="navbar">
+      <img src="jzm_logo.png" alt="" />
+      <div class="buttons">
+        <div class="uvod"><a href="index.html">Úvod</a></div>
+        <div class="stoly"><a href="stoly.html">Stoly</a></div>
+        <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
+        <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
+        <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
+      </div>
+      <a
+        href="javascript:void(0);"
+        class="icon"
+        onclick="myFunction()"
+        style="margin-right: 30px"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> 
       <div class="displaywrapper">
         <div class="display">
           <div class="row">
@@ -74,5 +90,16 @@
         </div>
       </div>
     </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.style.display === "none") {
+          x.style.display = "flex";
+        } 
+        else {
+          x.style.display = "none";
+        }
+      }
+      </script>
   </body>
 </html>

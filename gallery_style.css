@@ -4,6 +4,7 @@ body{
 .heading {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .heading > h1 {
   color: #3f220f;
@@ -154,4 +155,10 @@ img {
 .rowItem13,
 .rowItem14 {
   opacity: 50%;
+}
+
+@media screen and (max-width: 750px){
+  .container{
+    width: 98%;
+  }
 }

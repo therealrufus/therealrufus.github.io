@@ -40,6 +40,15 @@
 <body>
   <div class="content">
     <div class="main">
+      <div class="mobilenavbar" id="nav" style="display: none;">
+        <div class="mobnavwrapper">
+          <div class="uvod" id="mobilesecect"><a href="index.html">Úvod</a></div>
+          <div class="stoly"><a href="stoly.html">Stoly</a></div>
+          <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
+          <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
+          <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
+        </div>
+      </div>
       <div class="navbar">
         <img src="jzm_logo.png" alt="" />
         <div class="buttons">
@@ -49,16 +58,7 @@
           <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
           <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
         </div>
-  <div id="myLinks">
-    <div class="linksContainer">
-      <div class="uvod"><a href="index.html">Úvod</a></div>
-      <div class="stoly"><a href="stoly.html">Stoly</a></div>
-      <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
-      <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
-      <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
-    </div>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="margin-right: 30px;">
     <i class="fa fa-bars"></i>
   </a>
       </div>      
@@ -131,7 +131,7 @@
             ohledem na hmotnost každé desky.
           </p>
           <a href="vyroba.html" class="direction"
-            >Podívat se na výrobní proces <i class="fas fa-arrow-right"></i
+            >Podívat se na výrobu <i class="fas fa-arrow-right"></i
           ></a>
         </div>
         <div class="image" id="right">
@@ -162,11 +162,12 @@
   </div>
   <script>
     function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
+      var x = document.getElementById("nav");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } 
+      else {
         x.style.display = "none";
-      } else {
-        x.style.display = "block";
       }
     }
     </script>

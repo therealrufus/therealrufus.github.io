@@ -1,8 +1,10 @@
-  .stoly,
-  .buttons > div:hover {
-    transition: linear 80ms;
-    border-bottom: solid;
-    margin-top: 5px;
-    border-width: 3px;
-    border-color: #3f220f;
-  }
+.stoly,
+.buttons > div:hover{
+  transition: linear 80ms;
+  border-bottom: solid;
+  border-width: 3px;
+  border-color: #3f220f;
+}
+.mobilenavbar > div{
+  border-color: #92704c;
+}

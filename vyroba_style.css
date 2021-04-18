@@ -9,13 +9,13 @@ body{
     justify-content: flex-start;
 }
 .vyroba,
-.buttons > div:hover {
+.buttons > div:hover{
   transition: linear 80ms;
   border-bottom: solid;
-  margin-top: 5px;
   border-width: 3px;
   border-color: #3f220f;
 }
+
 .displaywrapper{
     display: flex;
     justify-content: center;

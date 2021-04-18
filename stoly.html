@@ -38,6 +38,15 @@
 </head>
 <body>
   <div class="content">
+    <div class="mobilenavbar" id="nav" style="display: none">
+      <div class="mobnavwrapper">
+        <div class="uvod"><a href="index.html">Úvod</a></div>
+        <div class="stoly" id="mobilesecect"><a href="stoly.html">Stoly</a></div>
+        <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
+        <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
+        <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
+      </div>
+    </div>
     <div class="navbar">
       <img src="jzm_logo.png" alt="" />
       <div class="buttons">
@@ -47,6 +56,14 @@
         <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
         <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
       </div>
+      <a
+        href="javascript:void(0);"
+        class="icon"
+        onclick="myFunction()"
+        style="margin-right: 30px"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     <div class="heading">
       <h1>Galerie stolů</h1>
@@ -1048,5 +1065,14 @@
       item.classList.add("active");
       return childs.indexOf(item.innerHTML);
     }
-  </script>
+    function myFunction() {
+      var x = document.getElementById("nav");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } 
+      else {
+        x.style.display = "none";
+      }
+    }
+    </script>
 </body>

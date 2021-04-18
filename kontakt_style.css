@@ -9,13 +9,13 @@ body{
   justify-content: flex-start;
 }
 .kontakt,
-.buttons > div:hover {
+.buttons > div:hover{
   transition: linear 80ms;
   border-bottom: solid;
-  margin-top: 5px;
   border-width: 3px;
   border-color: #3f220f;
 }
+
 .heading {
   display: flex;
   justify-content: center;
@@ -57,4 +57,28 @@ h1{
 }
 a{
   color: #331c0d;
+}
+
+@media screen and (max-width: 750px){
+  .infowrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .info{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .address{
+    padding-left: 30px;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+  .map > iFrame{
+    width: 100%;
+    height: 500px;
+  }
 }
