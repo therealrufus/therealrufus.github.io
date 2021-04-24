@@ -15,7 +15,6 @@ body{
   border-width: 3px;
   border-color: #3f220f;
 }
-
 .heading {
   display: flex;
   justify-content: center;
@@ -30,14 +29,16 @@ body{
 .container{
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  margin-top: 50px;
+  height: 60%;
 }
 .infowrapper{
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   flex-direction: row;
   border: 4px solid #3f220f;
   margin: -10px;
+  width: 50%;
 }
 .info{
   background-color: rgba(173, 134, 92, 0.8);
@@ -50,6 +51,10 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 40%;
+}
+.map{
+  width: 60%;
 }
 h1{
   font-size: 25px;
@@ -58,27 +63,40 @@ h1{
 a{
   color: #331c0d;
 }
-
+@media screen and (max-width: 1100px){
+  .infowrapper{
+    width: 80%;
+  }
+}
 @media screen and (max-width: 750px){
   .infowrapper{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 92%;
   }
   .info{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 0px;
+    width: 100%;  
+  }
+  .name{
+    padding: 15px;
   }
   .address{
-    padding-left: 30px;
+    padding: 15px;
+
   }
   .container{
     display: flex;
     flex-direction: row;
   }
+  .map{
+    width: 100%;
+    height: 100%;
+  }
   .map > iFrame{
     width: 100%;
-    height: 500px;
+    height: 100%;
   }
 }
