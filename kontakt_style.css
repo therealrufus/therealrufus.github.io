@@ -69,14 +69,19 @@ a{
   }
 }
 @media screen and (max-width: 750px){
+  body{
+    overflow-y: scroll;
+    height: 100%;
+  }
   .infowrapper{
     display: flex;
     flex-direction: column;
     width: 92%;
+    height: auto;
   }
   .info{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0px;
     width: 100%;  
   }
@@ -85,18 +90,24 @@ a{
   }
   .address{
     padding: 15px;
-
+    font-size: 20px;
+    row-gap: 0px  ;
   }
   .container{
     display: flex;
     flex-direction: row;
+    height: 200%;
+    margin-bottom: 20px;
   }
   .map{
     width: 100%;
-    height: 100%;
+    height: 300px;
   }
   .map > iFrame{
     width: 100%;
     height: 100%;
+  }
+  .fas{
+    display: none;
   }
 }

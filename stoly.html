@@ -1,47 +1,33 @@
 <!DOCTYPE html>
+
 <head>
   <title>Jirkazmasivu</title>
-  <link
-    rel="stylesheet"
-    href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css"
-  />
+  <link rel="stylesheet" href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Itim&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Itim&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="jzm_logo_bile_light.png" type="image/icon type" />
   <script src="https://kit.fontawesome.com/yourcode.js"></script>
   <link rel="stylesheet" href="stoly_style.css" />
   <link rel="stylesheet" href="gallery_style.css" />
   <link rel="stylesheet" href="main.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script
-    src="https://kit.fontawesome.com/8e70d93942.js"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://kit.fontawesome.com/8e70d93942.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <div class="content">
     <div class="mobilenavbar" id="nav" style="display: none">
       <div class="mobnavwrapper">
         <div class="uvod"><a href="index.html">Úvod</a></div>
-        <div class="stoly" id="mobilesecect"><a href="stoly.html">Stoly</a></div>
+        <div class="stoly" id="mobilesecect">
+          <a href="stoly.html">Stoly</a>
+        </div>
         <div class="doplnky"><a href="doplnky.html">Doplňky</a></div>
         <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
         <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
@@ -56,13 +42,8 @@
         <div class="vyroba"><a href="vyroba.html">O Výrobě</a></div>
         <div class="kontakt"><a href="kontakt.html">Kontakt</a></div>
       </div>
-      <a
-        href="javascript:void(0);"
-        class="icon"
-        onclick="myFunction()"
-        style="margin-right: 30px"
-      >
-        <i class="fa fa-bars"></i>
+      <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()" style="margin-right: 30px" id="">
+        <i class="fa fa-bars" onclick="rotate()"></i>
       </a>
     </div>
     <div class="heading">
@@ -123,6 +104,47 @@
           </div>
         </div>
 
+        <div class="gallery12" id="gallery">
+          <div class="items12" id="items">
+            <div class="item12 active" id="item">
+              <img src="\galerie\stul_pod_umyvadlo/1.jpg" alt="" />
+            </div>
+            <div class="item12" id="item">
+              <img src="\galerie\stul_pod_umyvadlo/2.jpg" alt="" />
+            </div>
+            <div class="item12" id="item">
+              <img src="\galerie\stul_pod_umyvadlo/3.jpg" alt="" />
+            </div>
+            <div class="item12" id="item">
+              <img src="\galerie\stul_pod_umyvadlo/4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="prev12" id="prev">
+            <p>&#10094;</p>
+          </div>
+          <div class="next12" id="next">
+            <p>&#10095;</p>
+          </div>
+          <div class="info12" id="info">
+            <p>Originální dubový stolek pod umyvadlo.</p>
+            <p>rozměry: d 1,7m, š 56cm, v 84cm, tl 5cm, kovové podnoží.</p>
+          </div>
+          <div class="imgRow12" id="imgRow">
+            <div class="rowItem12 active" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo/1.jpg" alt="" />
+            </div>
+            <div class="rowItem12" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo/2.jpg" alt="" />
+            </div>
+            <div class="rowItem12" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo/3.jpg" alt="" />
+            </div>
+            <div class="rowItem12" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo/4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
         <div class="gallery2" id="gallery">
           <div class="items2" id="items">
             <div class="item2 active" id="item">
@@ -164,52 +186,56 @@
           </div>
         </div>
 
-        <div class="gallery3" id="gallery">
-          <div class="items3" id="items">
-            <div class="item3 active" id="item">
-              <img src="\galerie\stul_dub_rozmital/1.jpg" alt="" />
+
+        <div class="gallery13" id="gallery">
+          <div class="items13" id="items">
+            <div class="item13 active" id="item">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/1.jpg" alt="" />
             </div>
-            <div class="item3" id="item">
-              <img src="\galerie\stul_dub_rozmital/2.jpg" alt="" />
+            <div class="item13" id="item">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/2.jpg" alt="" />
             </div>
-            <div class="item3" id="item">
-              <img src="\galerie\stul_dub_rozmital/3.jpg" alt="" />
+            <div class="item13" id="item">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/3.jpg" alt="" />
             </div>
-            <div class="item3" id="item">
-              <img src="\galerie\stul_dub_rozmital/4.jpg" alt="" />
+            <div class="item13" id="item">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/4.jpg" alt="" />
             </div>
-            <div class="item3" id="item">
-              <img src="\galerie\stul_dub_rozmital/5.jpg" alt="" />
+            <div class="item13" id="item">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/5.jpg" alt="" />
+            </div>
+            <div class="item13" id="item">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/6.jpg" alt="" />
             </div>
           </div>
-          <div class="prev3" id="prev">
+          <div class="prev13" id="prev">
             <p>&#10094;</p>
           </div>
-          <div class="next3" id="next">
+          <div class="next13" id="next">
             <p>&#10095;</p>
           </div>
-          <div class="info3" id="info">
-            <p>Dubový jídelní stůl</p>
-            <p>
-              rozměry: d. 2,14m, š. 83-86cm, v. 79cm, tl. 8cm, podnoží dubové
-              kulány.
-            </p>
+          <div class="info13" id="info">
+            <p>Dubový stolek pod umyvadlo, kovové podnoží.</p>
+            <p>rozměry: d 1,8m, š 57cm, v 85cm, tl 5cm.</p>
           </div>
-          <div class="imgRow3" id="imgRow">
-            <div class="rowItem3 active" id="rowItem">
-              <img src="\galerie\stul_dub_rozmital/1.jpg" alt="" />
+          <div class="imgRow13" id="imgRow">
+            <div class="rowItem13 active" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/1.jpg" alt="" />
             </div>
-            <div class="rowItem3" id="rowItem">
-              <img src="\galerie\stul_dub_rozmital/2.jpg" alt="" />
+            <div class="rowItem13" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/2.jpg" alt="" />
             </div>
-            <div class="rowItem3" id="rowItem">
-              <img src="\galerie\stul_dub_rozmital/3.jpg" alt="" />
+            <div class="rowItem13" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/3.jpg" alt="" />
             </div>
-            <div class="rowItem3" id="rowItem">
-              <img src="\galerie\stul_dub_rozmital/4.jpg" alt="" />
+            <div class="rowItem13" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/4.jpg" alt="" />
             </div>
-            <div class="rowItem3" id="rowItem">
-              <img src="\galerie\stul_dub_rozmital/5.jpg" alt="" />
+            <div class="rowItem13" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/5.jpg" alt="" />
+            </div>
+            <div class="rowItem13" id="rowItem">
+              <img src="\galerie\stul_pod_umyvadlo_ritka/6.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -263,6 +289,72 @@
             </div>
             <div class="rowItem4" id="rowItem">
               <img src="\galerie\stul_dub_ritka/6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
+        <div class="gallery15" id="gallery">
+          <div class="items15" id="items">
+            <div class="item15 active" id="item">
+              <img src="\galerie\stul_souprava_dub/1.jpg" alt="" />
+            </div>
+            <div class="item15" id="item">
+              <img src="\galerie\stul_souprava_dub/2.jpg" alt="" />
+            </div>
+            <div class="item15" id="item">
+              <img src="\galerie\stul_souprava_dub/3.jpg" alt="" />
+            </div>
+            <div class="item15" id="item">
+              <img src="\galerie\stul_souprava_dub/4.jpg" alt="" />
+            </div>
+            <div class="item15" id="item">
+              <img src="\galerie\stul_souprava_dub/5.jpg" alt="" />
+            </div>
+            <div class="item15" id="item">
+              <img src="\galerie\stul_souprava_dub/6.jpg" alt="" />
+            </div>
+            <div class="item15" id="item">
+              <img src="\galerie\stul_souprava_dub/7.jpg" alt="" />
+            </div>
+            <div class="item15" id="item">
+              <img src="\galerie\stul_souprava_dub/8.jpg" alt="" />
+            </div>
+          </div>
+          <div class="prev15" id="prev">
+            <p>&#10094;</p>
+          </div>
+          <div class="next15" id="next">
+            <p>&#10095;</p>
+          </div>
+          <div class="info15" id="info">
+            <p>Souprava konferenčního a jídelního dubového stolu.</p>
+            <p></p>
+          </div>
+          <div class="imgRow15" id="imgRow">
+            <div class="rowItem15 active" id="rowItem">
+              <img src="\galerie\stul_souprava_dub/1.jpg" alt="" />
+            </div>
+            <div class="rowItem15" id="rowItem">
+              <img src="\galerie\stul_souprava_dub/2.jpg" alt="" />
+            </div>
+            <div class="rowItem15" id="rowItem">
+              <img src="\galerie\stul_souprava_dub/3.jpg" alt="" />
+            </div>
+            <div class="rowItem15" id="rowItem">
+              <img src="\galerie\stul_souprava_dub/4.jpg" alt="" />
+            </div>
+            <div class="rowItem15" id="rowItem">
+              <img src="\galerie\stul_souprava_dub/5.jpg" alt="" />
+            </div>
+            <div class="rowItem15" id="rowItem">
+              <img src="\galerie\stul_souprava_dub/6.jpg" alt="" />
+            </div>
+            <div class="rowItem15" id="rowItem">
+              <img src="\galerie\stul_souprava_dub/7.jpg" alt="" />
+            </div>
+            <div class="rowItem15" id="rowItem">
+              <img src="\galerie\stul_souprava_dub/8.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -360,61 +452,6 @@
             </div>
             <div class="rowItem6" id="rowItem">
               <img src="\galerie\stul_dub_dvojak/5.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="gallery7" id="gallery">
-          <div class="items7" id="items">
-            <div class="item7 active" id="item">
-              <img src="\galerie\stul_pergola/1.jpg" alt="" />
-            </div>
-            <div class="item7" id="item">
-              <img src="\galerie\stul_pergola/2.jpg" alt="" />
-            </div>
-            <div class="item7" id="item">
-              <img src="\galerie\stul_pergola/3.jpg" alt="" />
-            </div>
-            <div class="item7" id="item">
-              <img src="\galerie\stul_pergola/4.jpg" alt="" />
-            </div>
-            <div class="item7" id="item">
-              <img src="\galerie\stul_pergola/5.jpg" alt="" />
-            </div>
-            <div class="item7" id="item">
-              <img src="\galerie\stul_pergola/6.jpg" alt="" />
-            </div>
-          </div>
-          <div class="prev7" id="prev">
-            <p>&#10094;</p>
-          </div>
-          <div class="next7" id="next">
-            <p>&#10095;</p>
-          </div>
-          <div class="info7" id="info">
-            <p>Krásná dubová sestava pod pergolu dvou stolů.</p>
-            <p>
-              rozměry - celková délka dvou stolů 3,3m, š: 81-88cm, v: 80cm, tl:
-              8cm, podnoží dubové kulány s trnoží.
-            </p>
-          </div>
-          <div class="imgRow7" id="imgRow">
-            <div class="rowItem7 active" id="rowItem">
-              <img src="\galerie\stul_pergola/1.jpg" alt="" />
-            </div>
-            <div class="rowItem7" id="rowItem">
-              <img src="\galerie\stul_pergola/2.jpg" alt="" />
-            </div>
-            <div class="rowItem7" id="rowItem">
-              <img src="\galerie\stul_pergola/3.jpg" alt="" />
-            </div>
-            <div class="rowItem7" id="rowItem">
-              <img src="\galerie\stul_pergola/4.jpg" alt="" />
-            </div>
-            <div class="rowItem7" id="rowItem">
-              <img src="\galerie\stul_pergola/5.jpg" alt="" />
-            </div>
-            <div class="rowItem7" id="rowItem">
-              <img src="\galerie\stul_pergola/6.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -551,6 +588,115 @@
             </div>
           </div>
         </div>
+
+        <div class="gallery7" id="gallery">
+          <div class="items7" id="items">
+            <div class="item7 active" id="item">
+              <img src="\galerie\stul_pergola/1.jpg" alt="" />
+            </div>
+            <div class="item7" id="item">
+              <img src="\galerie\stul_pergola/2.jpg" alt="" />
+            </div>
+            <div class="item7" id="item">
+              <img src="\galerie\stul_pergola/3.jpg" alt="" />
+            </div>
+            <div class="item7" id="item">
+              <img src="\galerie\stul_pergola/4.jpg" alt="" />
+            </div>
+            <div class="item7" id="item">
+              <img src="\galerie\stul_pergola/5.jpg" alt="" />
+            </div>
+            <div class="item7" id="item">
+              <img src="\galerie\stul_pergola/6.jpg" alt="" />
+            </div>
+          </div>
+          <div class="prev7" id="prev">
+            <p>&#10094;</p>
+          </div>
+          <div class="next7" id="next">
+            <p>&#10095;</p>
+          </div>
+          <div class="info7" id="info">
+            <p>Krásná dubová sestava pod pergolu dvou stolů.</p>
+            <p>
+              rozměry - celková délka dvou stolů 3,3m, š: 81-88cm, v: 80cm, tl:
+              8cm, podnoží dubové kulány s trnoží.
+            </p>
+          </div>
+          <div class="imgRow7" id="imgRow">
+            <div class="rowItem7 active" id="rowItem">
+              <img src="\galerie\stul_pergola/1.jpg" alt="" />
+            </div>
+            <div class="rowItem7" id="rowItem">
+              <img src="\galerie\stul_pergola/2.jpg" alt="" />
+            </div>
+            <div class="rowItem7" id="rowItem">
+              <img src="\galerie\stul_pergola/3.jpg" alt="" />
+            </div>
+            <div class="rowItem7" id="rowItem">
+              <img src="\galerie\stul_pergola/4.jpg" alt="" />
+            </div>
+            <div class="rowItem7" id="rowItem">
+              <img src="\galerie\stul_pergola/5.jpg" alt="" />
+            </div>
+            <div class="rowItem7" id="rowItem">
+              <img src="\galerie\stul_pergola/6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
+        <div class="gallery3" id="gallery">
+          <div class="items3" id="items">
+            <div class="item3 active" id="item">
+              <img src="\galerie\stul_dub_rozmital/1.jpg" alt="" />
+            </div>
+            <div class="item3" id="item">
+              <img src="\galerie\stul_dub_rozmital/2.jpg" alt="" />
+            </div>
+            <div class="item3" id="item">
+              <img src="\galerie\stul_dub_rozmital/3.jpg" alt="" />
+            </div>
+            <div class="item3" id="item">
+              <img src="\galerie\stul_dub_rozmital/4.jpg" alt="" />
+            </div>
+            <div class="item3" id="item">
+              <img src="\galerie\stul_dub_rozmital/5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="prev3" id="prev">
+            <p>&#10094;</p>
+          </div>
+          <div class="next3" id="next">
+            <p>&#10095;</p>
+          </div>
+          <div class="info3" id="info">
+            <p>Dubový jídelní stůl</p>
+            <p>
+              rozměry: d. 2,14m, š. 83-86cm, v. 79cm, tl. 8cm, podnoží dubové
+              kulány.
+            </p>
+          </div>
+          <div class="imgRow3" id="imgRow">
+            <div class="rowItem3 active" id="rowItem">
+              <img src="\galerie\stul_dub_rozmital/1.jpg" alt="" />
+            </div>
+            <div class="rowItem3" id="rowItem">
+              <img src="\galerie\stul_dub_rozmital/2.jpg" alt="" />
+            </div>
+            <div class="rowItem3" id="rowItem">
+              <img src="\galerie\stul_dub_rozmital/3.jpg" alt="" />
+            </div>
+            <div class="rowItem3" id="rowItem">
+              <img src="\galerie\stul_dub_rozmital/4.jpg" alt="" />
+            </div>
+            <div class="rowItem3" id="rowItem">
+              <img src="\galerie\stul_dub_rozmital/5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
         <div class="gallery11" id="gallery">
           <div class="items11" id="items">
             <div class="item11 active" id="item">
@@ -604,98 +750,7 @@
             </div>
           </div>
         </div>
-        <div class="gallery12" id="gallery">
-          <div class="items12" id="items">
-            <div class="item12 active" id="item">
-              <img src="\galerie\stul_pod_umyvadlo/1.jpg" alt="" />
-            </div>
-            <div class="item12" id="item">
-              <img src="\galerie\stul_pod_umyvadlo/2.jpg" alt="" />
-            </div>
-            <div class="item12" id="item">
-              <img src="\galerie\stul_pod_umyvadlo/3.jpg" alt="" />
-            </div>
-            <div class="item12" id="item">
-              <img src="\galerie\stul_pod_umyvadlo/4.jpg" alt="" />
-            </div>
-          </div>
-          <div class="prev12" id="prev">
-            <p>&#10094;</p>
-          </div>
-          <div class="next12" id="next">
-            <p>&#10095;</p>
-          </div>
-          <div class="info12" id="info">
-            <p>Originální dubový stolek pod umyvadlo.</p>
-            <p>rozměry: d 1,7m, š 56cm, v 84cm, tl 5cm, kovové podnoží.</p>
-          </div>
-          <div class="imgRow12" id="imgRow">
-            <div class="rowItem12 active" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo/1.jpg" alt="" />
-            </div>
-            <div class="rowItem12" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo/2.jpg" alt="" />
-            </div>
-            <div class="rowItem12" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo/3.jpg" alt="" />
-            </div>
-            <div class="rowItem12" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo/4.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="gallery13" id="gallery">
-          <div class="items13" id="items">
-            <div class="item13 active" id="item">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/1.jpg" alt="" />
-            </div>
-            <div class="item13" id="item">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/2.jpg" alt="" />
-            </div>
-            <div class="item13" id="item">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/3.jpg" alt="" />
-            </div>
-            <div class="item13" id="item">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/4.jpg" alt="" />
-            </div>
-            <div class="item13" id="item">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/5.jpg" alt="" />
-            </div>
-            <div class="item13" id="item">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/6.jpg" alt="" />
-            </div>
-          </div>
-          <div class="prev13" id="prev">
-            <p>&#10094;</p>
-          </div>
-          <div class="next13" id="next">
-            <p>&#10095;</p>
-          </div>
-          <div class="info13" id="info">
-            <p>Dubový stolek pod umyvadlo, kovové podnoží.</p>
-            <p>rozměry: d 1,8m, š 57cm, v 85cm, tl 5cm.</p>
-          </div>
-          <div class="imgRow13" id="imgRow">
-            <div class="rowItem13 active" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/1.jpg" alt="" />
-            </div>
-            <div class="rowItem13" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/2.jpg" alt="" />
-            </div>
-            <div class="rowItem13" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/3.jpg" alt="" />
-            </div>
-            <div class="rowItem13" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/4.jpg" alt="" />
-            </div>
-            <div class="rowItem13" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/5.jpg" alt="" />
-            </div>
-            <div class="rowItem13" id="rowItem">
-              <img src="\galerie\stul_pod_umyvadlo_ritka/6.jpg" alt="" />
-            </div>
-          </div>
-        </div>
+
         <div class="gallery14" id="gallery">
           <div class="items14" id="items">
             <div class="item14 active" id="item">
@@ -1028,6 +1083,26 @@
       index14 = next("prev", slides14, rows14, index14);
     };
 
+    //15
+    let index15 = 0;
+    let slides15 = document.querySelector(".items15").children;
+    let rows15 = document.querySelector(".imgRow15").children;
+    let prevSlide15 = document.querySelector(".prev15");
+    let nextSlide15 = document.querySelector(".next15");
+
+    for (i = 0, len = rows15.length; i < len; i++) {
+      rows15[i].addEventListener("click", function (event) {
+        index15 = select(event.target.parentElement, slides15, rows15);
+      });
+    }
+
+    nextSlide15.onclick = function () {
+      index15 = next("next", slides15, rows15, index15);
+    };
+    prevSlide15.onclick = function () {
+      index15 = next("prev", slides15, rows15, index15);
+    };
+
     //func
 
     function next(direction, slides, rows, index) {
@@ -1069,10 +1144,21 @@
       var x = document.getElementById("nav");
       if (x.style.display === "none") {
         x.style.display = "flex";
-      } 
-      else {
+      } else {
         x.style.display = "none";
       }
     }
-    </script>
+
+    var rotated = 0;
+    function rotate() {
+      var icon = document.getElementById("icon");
+      if (rotated == 0) {
+        icon.style.transform = "rotate(90deg)";
+        rotated = 1;
+      } else {
+        icon.style.transform = "rotate(0deg)";
+        rotated = 0;
+      }
+    }
+  </script>
 </body>

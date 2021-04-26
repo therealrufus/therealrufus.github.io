@@ -228,7 +228,8 @@ p {
     font-size: 35px;
   }
   .infotext > p{
-    font-size: 30px;
+    font-size: 25px;
+    row-gap: 0px;
   }
   .banner{
     flex-direction: column;

@@ -90,6 +90,7 @@ img {
   cursor: pointer;
   margin-bottom: -2px;
 }
+
 .item1,
 .item2,
 .item3,
@@ -103,7 +104,9 @@ img {
 .item11,
 .item12,
 .item13,
-.item14 {
+.item14,
+.item15,
+.item16S {
   display: none;
 }
 .item1.active,
@@ -119,7 +122,9 @@ img {
 .item11.active,
 .item12.active,
 .item13.active,
-.item14.active {
+.item14.active,
+.item15.active,
+.item16.active{
   display: block;
   margin-bottom: -2px;
 }
@@ -136,7 +141,9 @@ img {
 .rowItem11.active,
 .rowItem12.active,
 .rowItem13.active,
-.rowItem14.active {
+.rowItem14.active,
+.rowItem15.active,
+.rowItem16.active {
   opacity: 100%;
 }
 
@@ -153,7 +160,9 @@ img {
 .rowItem11,
 .rowItem12,
 .rowItem13,
-.rowItem14 {
+.rowItem14,
+.rowItem15,
+.rowItem16 {
   opacity: 50%;
 }
 
