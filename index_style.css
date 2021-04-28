@@ -208,14 +208,15 @@ p {
     margin: 0px;
     width: 80%;
   }
-  .imgleft > img {
-    display: none;
-  }
+
   .text {
     padding: 30px;
   }
   .center_text{
     margin-top: 80px;
+  }
+  .imgleft > img {
+    margin: 0px;
   }
 }
 
@@ -262,5 +263,8 @@ p {
   }
   .site{
     padding: 0px;
+  }
+  #dopln{
+    flex-direction: column-reverse;
   }
 }
