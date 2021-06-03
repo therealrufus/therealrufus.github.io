@@ -14,7 +14,7 @@
     justify-content: center;
 }
 .images{
-    width: 70%;
+    width: 55%;
     display: flex;
     flex-direction: row;
     border-left: #3f220f solid 4px;
