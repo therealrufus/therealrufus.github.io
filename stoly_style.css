@@ -8,3 +8,6 @@
 .mobilenavbar > div{
   border-color: #92704c;
 }
+.info > p{
+  margin: 0px;
+}
