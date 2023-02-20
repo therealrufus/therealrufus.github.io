@@ -1,5 +1,5 @@
 .uvod,
-.buttons > div:hover{
+.buttons > div:hover {
   transition: linear 80ms;
   border-bottom: solid;
   border-width: 3px;
@@ -54,7 +54,7 @@
   margin-left: -100px;
   border: 4px solid #3f220f;
 }
-.infotextwrapper{
+.infotextwrapper {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -70,8 +70,8 @@
   text-align: center;
   font-family: kalam;
   font-weight: regular;
-  float:right;
-  
+  float: right;
+
   letter-spacing: normal;
   border-radius: 30px;
   /*border: 4px solid #3f220f;*/
@@ -189,82 +189,157 @@ p {
   color: #331c0d;
 }
 
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+  background-color: rgba(173, 134, 92);
+  border-radius: 5px;
+  border: 2px solid #3f220f;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: xx-large;
+}
+
+.popup > a > img {
+  border-radius: 5px;
+}
+
+.inviteText > h1 {
+  padding: 5%;
+  font-size: x-large;
+}
+
+.inviteText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.buttonWrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.buttonWrapper > button{
+	cursor: pointer;
+
+}
+
+.inviteText >div> button{
+	width: 30%;
+	background-color: rgba(173, 134, 92);
+	border-radius: 5px;
+	border: 2px solid #3f220f;
+	font-family: 'Courgette';
+	justify-self: center;
+}
+
 @media screen and (max-width: 1100px) {
-  body{
-    box-sizing: border-box;
+	body {
+	  box-sizing: border-box;
+	}
+	.galleryinfo {
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  margin-top: 80px;
+	}
+	.infotextwrapper {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: row;
+	}
+	.infotext {
+	  margin: 0px;
+	  width: 80%;
+	}
+  
+	.text {
+	  padding: 30px;
+	}
+	.center_text {
+	  margin-top: 80px;
+	}
+	.imgleft > img {
+	  margin: 0px;
+	}
+	.popup{
+		flex-direction: column;
+		width:min-content;
+	  }
+	.inviteText{
+		width:80%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
   }
-  .galleryinfo {
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: 80px;
+  
+  @media screen and (max-width: 750px) {
+	.center_text {
+	  flex-direction: column;
+	}
+	.center_text > p {
+	  font-size: 35px;
+	}
+	.infotext > p {
+	  font-size: 25px;
+	  row-gap: 0px;
+	}
+	.banner {
+	  flex-direction: column;
+	}
+	.text {
+	  width: 90%;
+	  padding: 20px;
+	}
+	.image {
+	  width: 80%;
+	  margin-left: 20px;
+	  margin-top: 25px;
+	  padding-bottom: -10px;
+	}
+	.kontakty {
+	  padding: 0px;
+	  margin: 0px;
+	  padding-bottom: 20px;
+	  padding-top: 10px;
+	  width: 100%;
+	}
+	.kontaktwrapper {
+	  flex-direction: column;
+	}
+	.kontaktwrapper > div {
+	  padding: 10px;
+	}
+	.kontaktnadpis {
+	  padding-bottom: 10px;
+	}
+	.site {
+	  padding: 0px;
+	}
+	#dopln {
+	  flex-direction: column-reverse;
+	}
   }
-  .infotextwrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .infotext {
-    margin: 0px;
-    width: 80%;
-  }
-
-  .text {
-    padding: 30px;
-  }
-  .center_text{
-    margin-top: 80px;
-  }
-  .imgleft > img {
-    margin: 0px;
-  }
-}
-
-
-@media screen and (max-width: 750px) {
-  .center_text{
-    flex-direction: column;
-  }
-  .center_text > p{
-    font-size: 35px;
-  }
-  .infotext > p{
-    font-size: 25px;
-    row-gap: 0px;
-  }
-  .banner{
-    flex-direction: column;
-  }
-  .text{
-    width: 90%;
-    padding: 20px;
-  }
-  .image{
-    width: 80%;
-    margin-left: 20px;
-    margin-top: 25px;
-    padding-bottom: -10px;
-  }
-  .kontakty{
-    padding: 0px;
-    margin: 0px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    width: 100%;
-  }
-  .kontaktwrapper{
-    flex-direction: column;
-  }
-  .kontaktwrapper > div {
-    padding: 10px;
-  }
-  .kontaktnadpis{
-    padding-bottom: 10px;
-  }
-  .site{
-    padding: 0px;
-  }
-  #dopln{
-    flex-direction: column-reverse;
-  }
-}
