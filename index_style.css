@@ -287,13 +287,13 @@ p {
 		flex-direction: column;
 		width:min-content;
 	  }
-	.inviteText{
-		width:80%;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+		.inviteText{
+			width:80%;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
   }
   
   @media screen and (max-width: 750px) {
