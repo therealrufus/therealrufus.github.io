@@ -53,21 +53,6 @@
         </a>
       </div>
 
-
-      <div class="popup" id="popup">
-        <a href="https://designshaker.cz/" target="_blank"><img src="https://storage.abf.cz/file/show?nl_id=139780"
-            alt=""></a>
-        <div class="inviteText">
-          <h1>Přijďte nás najít na veletrhu Design Shaker!</h1>
-
-          <div class="buttonWrapper">
-            <button onclick="showPopup()">
-              Zavřít
-            </button>
-          </div>
-        </div>
-      </div>
-
       <div class="center_text">
         <p class="info">Pro útulné bydlení-</p>
         <p class="nadpis">Jirka z masivu</p>
@@ -163,10 +148,6 @@
   </div>
   </div>
   <script>
-    function showPopup() {
-      document.getElementById("popup").style.display = 'none';
-    }
-
     var rotated = 0;
     function myFunction() {
       var x = document.getElementById("nav");
@@ -187,8 +168,28 @@
         icon.style.transform = 'rotate(0deg)';
         rotated = 0;
       }
-    }
+    }    
   </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2FX4LQTQ7">
+
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+
+
+
+    gtag('config', 'G-Q2FX4LQTQ7');
+
+  </script>
+  <!-- endof Google tag (gtag.js) -->
+
 </body>
 
 </html>
