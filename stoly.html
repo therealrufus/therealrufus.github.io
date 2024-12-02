@@ -57,6 +57,65 @@
     </div>
     <div class="containerwrapper">
       <div class="container">
+        <div class="gallery28" id="gallery">
+          <div class="items28" id="items">
+            <div class="item28 active" id="item">
+              <img src="\galerie\stul_poncik_lipno/1.jpg" alt="" />
+            </div>
+            <div class="item28" id="item">
+              <img src="\galerie\stul_poncik_lipno/2.jpg" alt="" />
+            </div>
+            <div class="item28" id="item">
+              <img src="\galerie\stul_poncik_lipno/3.jpg" alt="" />
+            </div>
+            <div class="item28" id="item">
+              <img src="\galerie\stul_poncik_lipno/4.jpg" alt="" />
+            </div>
+            <div class="item28" id="item">
+              <img src="\galerie\stul_poncik_lipno/5.jpg" alt="" />
+            </div>
+            <div class="item28" id="item">
+              <img src="\galerie\stul_poncik_lipno/6.jpg" alt="" />
+            </div>
+            <div class="item28" id="item">
+              <img src="\galerie\stul_poncik_lipno/7.jpg" alt="" />
+            </div>
+          </div>
+          <div class="prev28" id="prev">
+            <p>&#10094;</p>
+          </div>
+          <div class="next28" id="next">
+            <p>&#10095;</p>
+          </div>
+          <div class="info28" id="info">
+            <p>Krásná dubová sesteva jídelní stůl 246 x 85 x 8cm.</p>
+            <p>Konferenční stolek 77 x 55 x 8cm.</p>
+          </div>
+          <div class="imgRow28" id="imgRow">
+
+            <div class="rowItem28 active" id="rowItem">
+              <img src="\galerie\stul_poncik_lipno/1.jpg" alt="" />
+            </div>
+            <div class="rowItem28" id="rowItem">
+              <img src="\galerie\stul_poncik_lipno/2.jpg" alt="" />
+            </div>
+            <div class="rowItem28" id="rowItem">
+              <img src="\galerie\stul_poncik_lipno/3.jpg" alt="" />
+            </div>
+            <div class="rowItem28" id="rowItem">
+              <img src="\galerie\stul_poncik_lipno/4.jpg" alt="" />
+            </div>
+            <div class="rowItem28" id="rowItem">
+              <img src="\galerie\stul_poncik_lipno/5.jpg" alt="" />
+            </div>
+            <div class="rowItem28" id="rowItem">
+              <img src="\galerie\stul_poncik_lipno/6.jpg" alt="" />
+            </div>
+            <div class="rowItem28" id="rowItem">
+              <img src="\galerie\stul_poncik_lipno/7.jpg" alt="" />
+            </div>
+          </div>
+        </div>
         <div class="gallery1" id="gallery">
           <div class="items1" id="items">
             <div class="item1 active" id="item">
@@ -1402,7 +1461,7 @@
       </div>
     </div>
     <div class="copyright">
-      <h1>©2021 Filip Brož</h1>
+      <h1>©2024 Filip Brož</h1>
     </div>
   </div>
   <script>
@@ -1924,6 +1983,26 @@
     };
     prevSlide27.onclick = function () {
       index27 = next("prev", slides27, rows27, index27);
+    };
+
+    //28
+    let index28 = 0;
+    let slides28 = document.querySelector(".items28").children;
+    let rows28 = document.querySelector(".imgRow28").children;
+    let prevSlide28 = document.querySelector(".prev28");
+    let nextSlide28 = document.querySelector(".next28");
+
+    for (i = 0, len = rows28.length; i < len; i++) {
+      rows28[i].addEventListener("click", function (event) {
+        index28 = select(event.target.parentElement, slides28, rows28);
+      });
+    }
+
+    nextSlide28.onclick = function () {
+      index28 = next("next", slides28, rows28, index28);
+    };
+    prevSlide28.onclick = function () {
+      index28 = next("prev", slides28, rows28, index28);
     };
 
     //func

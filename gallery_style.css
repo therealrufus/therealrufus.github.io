@@ -117,7 +117,17 @@ img {
 .item24,
 .item25,
 .item26,
-.item27 {
+.item27,
+.item28,
+.item29,
+.item30,
+.item31,
+.item32,
+.item33,
+.item34,
+.item35,
+.item36,
+.item37 {
   display: none;
 }
 .item1.active,
@@ -146,7 +156,17 @@ img {
 .item24.active,
 .item25.active,
 .item26.active,
-.item27.active{
+.item27.active,
+.item28.active,
+.item29.active,
+.item30.active,
+.item31.active,
+.item32.active,
+.item33.active,
+.item34.active,
+.item35.active,
+.item36.active,
+.item37.active{
   display: block;
   margin-bottom: -2px;
 }
@@ -176,7 +196,17 @@ img {
 .rowItem24.active,
 .rowItem25.active,
 .rowItem26.active,
-.rowItem27.active {
+.rowItem27.active,
+.rowItem28.active,
+.rowItem29.active,
+.rowItem30.active,
+.rowItem31.active,
+.rowItem32.active,
+.rowItem33.active,
+.rowItem34.active,
+.rowItem35.active,
+.rowItem36.active,
+.rowItem37.active {
   opacity: 100%;
 }
 
@@ -206,7 +236,17 @@ img {
 .rowItem25,
 .rowItem26,
 .rowItem27,
-.rowItem28 {
+.rowItem28,
+.rowItem29,
+.rowItem30,
+.rowItem31,
+.rowItem32,
+.rowItem33,
+.rowItem34,
+.rowItem35,
+.rowItem36,
+.rowItem37,
+.rowItem38 {
   opacity: 50%;
 }
 
