@@ -1,0 +1,309 @@
+{
+    "doplnky": {
+        "items": [],
+        "subfolders": {
+            "doplnek_hodiny": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "doplnek_hodiny_teak": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ],
+            "doplnek_jilm_vesak": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg"
+            ],
+            "doplnek_parapety": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "doplnek_prkenka": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg",
+                "8.jpg",
+                "9.jpg"
+            ],
+            "doplnek_prkenka_teak": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg",
+                "8.jpg",
+                "9.jpg"
+            ],
+            "doplnek_spalek_buk": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg"
+            ]
+        }
+    },
+    "reference": {
+        "items": [
+            "ref oborn\u00e1.PNG",
+            "ref renata.PNG",
+            "ref1.png",
+            "ref10.png",
+            "ref11.png",
+            "ref4.png",
+            "ref5.png",
+            "ref6.png",
+            "ref7.png",
+            "ref8.png",
+            "ref9.png",
+            "reference hendrychov\u00e1.jpg",
+            "ref_cerna.jpg",
+            "ref_krmelec.PNG",
+            "ref_mrstik.jpg",
+            "ref_vlasaty.jpg"
+        ],
+        "subfolders": {}
+    },
+    "stoly": {
+        "items": [],
+        "subfolders": {
+            "stul_2x_buk": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_bistro_kafarna": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg",
+                "8.jpg",
+                "9.jpg"
+            ],
+            "stul_bistro_svehovka": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg"
+            ],
+            "stul_buk": [
+                "buk1.jpg",
+                "buk2.jpg",
+                "buk3.jpg",
+                "buk4.jpg",
+                "buk5.jpg",
+                "buk6.jpg"
+            ],
+            "stul_buk2": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ],
+            "stul_buk_lavice": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg"
+            ],
+            "stul_buk_vesela": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ],
+            "stul_buk_vybarveny": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg"
+            ],
+            "stul_dubovy_domazlice": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_dub_2": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_dub_dvojak": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg"
+            ],
+            "stul_dub_jidelni": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg"
+            ],
+            "stul_dub_konecny": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ],
+            "stul_dub_luptak": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ],
+            "stul_dub_novakova": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_dub_ritka": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_dub_rozmital": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg"
+            ],
+            "stul_dub_styl": [
+                "1.jpg",
+                "2.jpg"
+            ],
+            "stul_jasan": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_javor": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg"
+            ],
+            "stul_javor_2": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg"
+            ],
+            "stul_konferencni_dvojak": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ],
+            "stul_pergola": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_pod_umyvadlo": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ],
+            "stul_pod_umyvadlo_ritka": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_poncik_lipno": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg"
+            ],
+            "stul_sachovy": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg"
+            ],
+            "stul_souprava_dub": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg",
+                "8.jpg"
+            ]
+        }
+    },
+    "vyroba": {
+        "items": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg",
+            "5.jpg"
+        ],
+        "subfolders": {}
+    }
+}
