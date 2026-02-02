@@ -23,9 +23,6 @@ document.addEventListener("click", function (event)
 //argument is either -1/+1 for advancing by one, or the index of the new active item.
 function chengeActive(galleryName, argument, mode)
 {
-    //console.log(galleryName);
-    //console.log(galleryState[galleryName]);
-
     const gallerySize = galleryState[galleryName].totalImages;
     const activeIndex = galleryState[galleryName].activeIndex;
     var newActiveIndex = 0;
@@ -69,5 +66,4 @@ function chengeActive(galleryName, argument, mode)
     newActivePreviewItem.classList.add("active");
 
     galleryState[galleryName].activeIndex = newActiveIndex;
-    console.log(galleryState[galleryName]);
 }

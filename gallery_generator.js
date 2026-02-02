@@ -17,14 +17,13 @@ function initGalleryData(dirmap, subsection)
     galleryState = {}
 
     const workingFolder = dirmap[subsection].subfolders;
+
     Object.keys(workingFolder).forEach(galleryName => {
         galleryState[galleryName] = {
             activeIndex: 0,
-            totalImages: workingFolder[galleryName].length,
+            totalImages: workingFolder[galleryName].items.length,
         };
     });
-
-    //console.log(galleryState);
 }
 
 function generateGalleries(dirmap, subsection)
@@ -35,10 +34,12 @@ function generateGalleries(dirmap, subsection)
     container.innerHTML = "";
 
     Object.keys(workingFolder).forEach(galleryName => {
-        const galleryContent = workingFolder[galleryName];
-        
+        const galleryContent = workingFolder[galleryName].items;
+        const galleryText = workingFolder[galleryName].text
+
         //console.log(galleryName);
         //console.log(galleryContent);
+        //console.log(galleryText);
         
         //create the main gallery div
         const galleryDiv = document.createElement("div");
@@ -102,7 +103,17 @@ function generateGalleries(dirmap, subsection)
         const infoBox = document.createElement("div");
         infoBox.setAttribute("class", "info");
         infoBox.setAttribute("id", `info_${galleryName}`);
-        infoBox.innerHTML = "WIP";
+        
+        if (galleryText != null)
+        {
+            Object.keys(galleryText).forEach(line_index => {
+                line = galleryText[line_index];
+                const line_div = document.createElement("div");
+                line_div.innerHTML = line;
+                infoBox.appendChild(line_div);
+            });
+        }
+
         galleryDiv.appendChild(infoBox);
 
         //append the preview row that was created earlier
