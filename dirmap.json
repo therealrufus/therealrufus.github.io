@@ -9,7 +9,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            }
         },
         "doplnek_hodiny_teak": {
             "items": [
@@ -18,6 +37,22 @@
                 "3.jpg",
                 "4.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
             "text": [
                 "Teakov\u00e9 hodiny se zaj\u00edmav\u00fdm tvarem a kresbou, pr\u016fm\u011br cca 30cm, tl x 5cm."
             ]
@@ -30,7 +65,24 @@
                 "4.jpg",
                 "5.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            }
         },
         "doplnek_parapety": {
             "items": [
@@ -41,7 +93,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            }
         },
         "doplnek_prkenka": {
             "items": [
@@ -55,7 +126,32 @@
                 "8.jpg",
                 "9.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg",
+                    "9.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg",
+                    "9.jpg"
+                ]
+            }
         },
         "doplnek_prkenka_teak": {
             "items": [
@@ -69,7 +165,32 @@
                 "8.jpg",
                 "9.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg",
+                    "9.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg",
+                    "9.jpg"
+                ]
+            }
         },
         "doplnek_spalek_buk": {
             "items": [
@@ -81,9 +202,29 @@
                 "6.jpg",
                 "7.jpg"
             ],
-            "text": null
-        },
-        "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg"
+                ]
+            }
+        }
     },
     "reference": {
         "items": [
@@ -103,8 +244,7 @@
             "ref_krmelec.PNG",
             "ref_mrstik.jpg",
             "ref_vlasaty.jpg"
-        ],
-        "text": null
+        ]
     },
     "stoly": {
         "stul_2x_buk": {
@@ -117,12 +257,25 @@
                 "6.jpg"
             ],
             "processed": {
-                "text": null
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
             },
             "thumbnails": {
-                "text": null
-            },
-            "text": null
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            }
         },
         "stul_bistro_kafarna": {
             "items": [
@@ -136,6 +289,32 @@
                 "8.jpg",
                 "9.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg",
+                    "9.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg",
+                    "9.jpg"
+                ]
+            },
             "text": [
                 "Kompletn\u00ed vybaven\u00ed bistra Kaf\u00e1rna v Hostomicich v\u010detn\u011b oblo\u017een\u00ed st\u011bn, baru a parapet\u016f, ve\u0161ker\u00e9ho vnit\u0159n\u00edho vybaven\u00ed, venkovn\u00edho loga i s tabulemi."
             ]
@@ -148,6 +327,24 @@
                 "4.jpg",
                 "5.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
             "text": [
                 "Kompletn\u00ed vybaven\u00ed bistra \u0160vehlovka v Praze."
             ]
@@ -161,6 +358,26 @@
                 "buk5.jpg",
                 "buk6.jpg"
             ],
+            "processed": {
+                "items": [
+                    "buk1.jpg",
+                    "buk2.jpg",
+                    "buk3.jpg",
+                    "buk4.jpg",
+                    "buk5.jpg",
+                    "buk6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "buk1.jpg",
+                    "buk2.jpg",
+                    "buk3.jpg",
+                    "buk4.jpg",
+                    "buk5.jpg",
+                    "buk6.jpg"
+                ]
+            },
             "text": [
                 "Sestava dvou bukov\u00fdch stol\u016f k venkovn\u00edmu sezen\u00ed.",
                 "rozm\u011bry: d 4m, \u0161 81-87cm, v 77cm, tl 7cm, kovov\u00e9 podno\u017e\u00ed."
@@ -173,6 +390,22 @@
                 "3.jpg",
                 "4.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
             "text": [
                 "Bukov\u00fd j\u00eddeln\u00ed st\u016fl.",
                 "d\u00e9lka 220cm, \u0161\u00ed\u0159ka 90cm, tlou\u0161\u0165ka 10cm, kovov\u00e9 podno\u017e\u00ed."
@@ -186,6 +419,24 @@
                 "4.jpg",
                 "5.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
             "text": [
                 "Sestava bukov\u00fd st\u016fl a dubov\u00e9 lavice rozm\u011bry st\u016fl",
                 "d: 2,15m, \u0161: 81-84cm, tl: 7cm, kovov\u00e9 podno\u017e\u00ed"
@@ -198,6 +449,22 @@
                 "3.jpg",
                 "4.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
             "text": [
                 "J\u00eddeln\u00ed bukov\u00fd st\u016fl",
                 "rozm\u011bry: d 2,05m, \u0161 80-84cm, v 78cm, tl 7cm, kovov\u00e9 podno\u017e\u00ed."
@@ -213,6 +480,28 @@
                 "6.jpg",
                 "7.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg"
+                ]
+            },
             "text": [
                 "Bukov\u00fd j\u00eddeln\u00ed st\u016fl, kovov\u00e9 podno\u017e\u00ed.",
                 "rozm\u011bry: d 2,04m, \u0161 74-78cm, v 77cm, tl 7cm."
@@ -227,6 +516,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
             "text": [
                 "J\u00eddeln\u00ed dubov\u00fd st\u016fl.",
                 "rozm\u011bry - d: 2,15m, \u0161: 82-89cm, v: 78cm, tl: 8cm, kovov\u00e9 podno\u017e\u00ed."
@@ -241,6 +550,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
             "text": [
                 "Dubov\u00fd st\u016fl do zimn\u00ed zahrady",
                 "D\u00e9lka 230cm, \u0161\u00ed\u0159ka 107cm, tlou\u0161\u0165ka 8cm, kovov\u00e9 podno\u017e\u00ed"
@@ -254,6 +583,24 @@
                 "4.jpg",
                 "5.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
             "text": [
                 "Konferen\u010dn\u00ed st\u016fl dubov\u00fd dvoj\u00e1k",
                 "rozm\u011bry - d: 1,12m, \u0161: 83cm, v: 59cm, tl: 10cm, litinov\u00e9 podno\u017e\u00ed"
@@ -265,7 +612,20 @@
                 "2.jpg",
                 "3.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg"
+                ]
+            }
         },
         "stul_dub_konecny": {
             "items": [
@@ -274,6 +634,22 @@
                 "3.jpg",
                 "4.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
             "text": [
                 "Dubov\u00fd j\u00eddeln\u00ed st\u016fl.",
                 "dx 205cm, \u0161x 84cm, tlx 8cm, kovov\u00e9 podno\u017e\u00ed."
@@ -286,7 +662,22 @@
                 "3.jpg",
                 "4.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            }
         },
         "stul_dub_novakova": {
             "items": [
@@ -297,6 +688,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
             "text": [
                 "Dubov\u00fd j\u00eddeln\u00ed st\u016fl",
                 "dx 214cm, \u0161x 87cm, tlx 8cm, kovov\u00e9 podno\u017e\u00ed"
@@ -311,6 +722,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
             "text": [
                 "Dubov\u00e1 sestava dvou j\u00eddeln\u00edch stol\u016f, rozm\u011bry obou stol\u016f.",
                 "d: 1,95m, \u0161: 78-84cm, v: 77cm, kovov\u00e9 podno\u017e\u00ed."
@@ -324,13 +755,42 @@
                 "4.jpg",
                 "5.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            }
         },
         "stul_dub_styl": {
             "items": [
                 "1.jpg",
                 "2.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg"
+                ]
+            },
             "text": [
                 "Stylov\u00fd pracovn\u00ed dubov\u00fd stolek",
                 "d: 180cm, \u0161: 60cm, tl: 6cm, kovov\u00e9 nohy"
@@ -345,6 +805,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
             "text": [
                 "Jasanov\u00fd st\u016fl do j\u00eddelny na chalup\u011b",
                 "D\u0159\u011bv\u011bn\u00e9 jasanov\u00e9 podno\u017e\u00ed s trno\u017e\u00ed",
@@ -359,6 +839,24 @@
                 "4.jpg",
                 "5.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
             "text": [
                 "Javorov\u00fd kancel\u00e1\u0159sk\u00fd st\u016fl",
                 "rozm\u011bry - d: 2,11m, \u0161: 84-87cm, v: 79cm, tl: 8cm, kovov\u00e9 podno\u017e\u00ed"
@@ -372,6 +870,24 @@
                 "4.jpg",
                 "5.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ]
+            },
             "text": [
                 "Javorov\u00fd st\u016fl pod pergolu",
                 "d: 2,04m, \u0161: 78-82cm, tl: 8cm, kovov\u00e9 podno\u017e\u00ed"
@@ -384,6 +900,22 @@
                 "3.jpg",
                 "4.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
             "text": [
                 "Konferen\u010dn\u00ed dubov\u00fd stolek",
                 "rozm\u011bry: d. 1,1m, \u0161. 84cm, v. 48cm, tl. 10cm, kovov\u00e9 podno\u017e\u00ed"
@@ -398,7 +930,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            }
         },
         "stul_pod_umyvadlo": {
             "items": [
@@ -407,6 +958,22 @@
                 "3.jpg",
                 "4.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ]
+            },
             "text": [
                 "Origin\u00e1ln\u00ed dubov\u00fd stolek pod umyvadlo",
                 "rozm\u011bry: d 1,7m, \u0161 56cm, v 84cm, tl 5cm, kovov\u00e9 podno\u017e\u00ed"
@@ -421,6 +988,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
             "text": [
                 "Dubov\u00fd stolek pod umyvadlo, kovov\u00e9 podno\u017e\u00ed",
                 "rozm\u011bry: d 1,8m, \u0161 57cm, v 85cm, tl 5cm"
@@ -436,6 +1023,28 @@
                 "6.jpg",
                 "7.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg"
+                ]
+            },
             "text": [
                 "Kr\u00e1sn\u00e1 dubov\u00e1 sestava, j\u00eddeln\u00ed a konferen\u010dn\u00ed st\u016fl z mas\u00edvu.",
                 "Stoly maj\u00ed ponech\u00e1nu p\u0159\u00edrodn\u00ed hranu.",
@@ -452,7 +1061,26 @@
                 "5.jpg",
                 "6.jpg"
             ],
-            "text": null
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg"
+                ]
+            }
         },
         "stul_souprava_dub": {
             "items": [
@@ -465,11 +1093,34 @@
                 "7.jpg",
                 "8.jpg"
             ],
+            "processed": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg"
+                ]
+            },
+            "thumbnails": {
+                "items": [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg"
+                ]
+            },
             "text": [
                 "Souprava konferen\u010dn\u00edho a j\u00eddeln\u00edho bukov\u00e9ho stolu."
             ]
-        },
-        "text": null
+        }
     },
     "vyroba": {
         "items": [
@@ -478,7 +1129,6 @@
             "3.jpg",
             "4.jpg",
             "5.jpg"
-        ],
-        "text": null
+        ]
     }
 }
