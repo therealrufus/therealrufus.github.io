@@ -100,10 +100,7 @@ img {
   margin-bottom: -2px;
 }
 
-.item {
-  display: none;
-}
-.item.active{
+.item{
   display: block;
   margin-bottom: -2px;
 }

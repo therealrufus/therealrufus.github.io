@@ -2,41 +2,42 @@ let galleryState = {};
 
 //get the page type - stoly/doplnky/etc. from an empty div at the top of the page
 const typeDesignator = document.getElementById("gallery-type");
-const galleryType = typeDesignator.getAttribute("type");
+const galleryPage = typeDesignator.getAttribute("type");
 
 fetch("dirmap.json")
     .then(response => response.json())
     .then(responseContent => {
-        generateGalleries(responseContent, galleryType); //subsection tells the generate galleries function, which folder should be used, i.e. stoly 
-        initGalleryData(responseContent, galleryType); //[TODO] - get subsection dynamically from the current page
+        generateGalleries(responseContent, galleryPage); //subsection tells the generate galleries function, which folder should be used, i.e. stoly 
+        //initGalleryData(responseContent, galleryPage);
     }) 
     .catch(error => console.error("Error generating galleries: ", error));
 
-function initGalleryData(dirmap, subsection)
+function preloadImage(src) 
 {
-    galleryState = {}
-
-    const workingFolder = dirmap[subsection].subfolders;
-
-    Object.keys(workingFolder).forEach(galleryName => {
-        galleryState[galleryName] = {
-            activeIndex: 0,
-            totalImages: workingFolder[galleryName].items.length,
-        };
-    });
+    const img = new Image();
+    img.src = src;
 }
 
-function generateGalleries(dirmap, subsection)
+function initGalleryData(galleryName, imgPaths)
 {
-    //console.log(dirmap[subsection].subfolders);
-    const workingFolder = dirmap[subsection].subfolders; //select the folder relevant for the current page i.e. "/stoly/subfolders"
+    galleryState[galleryName] = {
+        activeIndex: 0,
+        imagePaths: imgPaths,
+        size: Object.keys(imgPaths).length,
+    };
+    console.log(galleryState)
+}
+
+function generateGalleries(dirmap, galleryPage)
+{
+    const workingFolder = dirmap[galleryPage]; //select the folder relevant for the current page i.e. "/stoly/"
     const container = document.getElementsByClassName("container")[0]; //container that will contain the galleries
     container.innerHTML = "";
 
     Object.keys(workingFolder).forEach(galleryName => {
         const galleryContent = workingFolder[galleryName].items;
         const galleryText = workingFolder[galleryName].text
-
+        let imgPaths = {};
         //console.log(galleryName);
         //console.log(galleryContent);
         //console.log(galleryText);
@@ -59,16 +60,31 @@ function generateGalleries(dirmap, subsection)
         //add individual items to the items wrapper and to the preview row
         Object.keys(galleryContent).forEach(imageIndex => {
             //create the image element (<img>)
-            const imagePath = `\\galerie\\${subsection}\\${galleryName}\\${galleryContent[imageIndex]}`;
-            const imageElement = document.createElement("img");  
-            imageElement.setAttribute("src", imagePath);          
-
-            const itemDiv = document.createElement("div");
-            const itemPreviewDiv = document.createElement("div");
+            const imagePath = `/galerie/${galleryPage}/${galleryName}/processed/${galleryContent[imageIndex]}`; //galleryContent[imageIndex] is the name of the image
+            imgPaths[imageIndex] = imagePath; // add the paths of full-sized imgs to this array. 
+            //const imageElement = document.createElement("img");
+            //imageElement.setAttribute("src", imagePath); 
+            //imageElement.loading = "eager";
+            //preloadImage(imagePath);  
             
-            itemDiv.setAttribute("class", "item");
-            itemDiv.setAttribute("id", `item_${galleryName}`);
-            if(imageIndex == 0){itemDiv.classList.add("active");}
+            const thumbnailPath = `/galerie/${galleryPage}/${galleryName}/thumbnails/${galleryContent[imageIndex]}`;
+            const thumbnailElement = document.createElement("img");
+            thumbnailElement.setAttribute("src", thumbnailPath);   
+
+            
+            const itemPreviewDiv = document.createElement("div");
+
+            if(imageIndex == 0)
+            {
+                const imageElement = document.createElement("img");
+                imageElement.setAttribute("src", imagePath); 
+                const itemDiv = document.createElement("div");
+                itemDiv.setAttribute("class", "item");
+                itemDiv.setAttribute("id", `item_${galleryName}`);
+                itemDiv.append(imageElement);
+                itemsWrapperDiv.appendChild(itemDiv);
+                //itemDiv.classList.add("active");
+            }
 
             itemPreviewDiv.setAttribute("class", "row_item");
             itemPreviewDiv.setAttribute("id", `row_item_${galleryName}`);
@@ -76,10 +92,8 @@ function generateGalleries(dirmap, subsection)
             itemPreviewDiv.dataset.imageIndex = imageIndex;
             if(imageIndex == 0){itemPreviewDiv.classList.add("active");}
 
-            itemDiv.append(imageElement);
-            itemPreviewDiv.append(imageElement.cloneNode(true));
+            itemPreviewDiv.append(thumbnailElement);
 
-            itemsWrapperDiv.appendChild(itemDiv);
             itemsPreviewWrapperDiv.appendChild(itemPreviewDiv);
         });
         galleryDiv.appendChild(itemsWrapperDiv);
@@ -121,5 +135,9 @@ function generateGalleries(dirmap, subsection)
 
         //append the whole gallery to the container
         container.appendChild(galleryDiv);
+
+        //init the gallery data
+        console.log(imgPaths)
+        initGalleryData(galleryName, imgPaths)
     });
 }

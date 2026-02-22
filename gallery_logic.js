@@ -23,7 +23,7 @@ document.addEventListener("click", function (event)
 //argument is either -1/+1 for advancing by one, or the index of the new active item.
 function chengeActive(galleryName, argument, mode)
 {
-    const gallerySize = galleryState[galleryName].totalImages;
+    const gallerySize = galleryState[galleryName].size;
     const activeIndex = galleryState[galleryName].activeIndex;
     var newActiveIndex = 0;
     
@@ -45,25 +45,29 @@ function chengeActive(galleryName, argument, mode)
     }
     else if (mode == "select")
     {
-        newActiveIndex = argument;
+        newActiveIndex = argument; 
     }
 
-    const itemsWrapper = document.getElementById(`items_${galleryName}`);
-    const items = itemsWrapper.querySelectorAll('.item');
-    const activeItem = items[activeIndex];
-    const newActiveItem = items[newActiveIndex];
-
+    //get new active thumbnail
     const itemsPreviewWrapper = document.getElementById(`preview_row_${galleryName}`);
     const previewItems = itemsPreviewWrapper.querySelectorAll('.row_item');
     const activePreviewItem = previewItems[activeIndex];
     const newActivePreviewItem = previewItems[newActiveIndex];
 
-    //unset the active item from being active
-    activeItem.classList.remove("active");
-    newActiveItem.classList.add("active");
-
     activePreviewItem.classList.remove("active");
     newActivePreviewItem.classList.add("active");
+
+    //change the src of the main image
+    const container = document.getElementById(`item_${galleryName}`);
+    const imgElement = container.querySelector("img");
+
+    const temp = new Image();
+    newSrc = galleryState[galleryName].imagePaths[newActiveIndex];
+    temp.src = newSrc;
+    temp.onload = () => {
+        imgElement.src = newSrc;
+    };
+    
 
     galleryState[galleryName].activeIndex = newActiveIndex;
 }

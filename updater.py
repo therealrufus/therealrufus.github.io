@@ -120,7 +120,7 @@ def scale_and_compress(src, dst, size):
     # create parent directories if they don't exist
     output_path = Path(dst)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    # TODO, cap img px size to like 2000, scale if bigger.
+    # TODO, cap img px size to like 2000, downscale if bigger.
     with Image.open(src) as im:
         im = im.convert("RGB")
 
@@ -180,7 +180,7 @@ def image_process(folder_path): #called per folder
             processed_something = True
             # set all images to the minimum present height, then pad the width, then compress
             print(f"miniaturu obr. je nutno aktualizovat!")
-            make_thumbnail(item_path, thumbnail_path)
+            make_thumbnail(processed_item_path, thumbnail_path)
 
     return processed_something
 
